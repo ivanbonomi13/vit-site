@@ -11,7 +11,7 @@
     --gradient-violet-medium: #8d1af1;
     --gradient-violet-light: #ffa5f6;
 
-    --border-radius: 4px;
+    --border-radius: 9px;
 }
 
 /* ALL ELEMENTS */
@@ -68,7 +68,7 @@ ul, ol {
     list-style-type: none;
 }
 
-button {
+button, a {
     cursor: pointer;
 }
 
