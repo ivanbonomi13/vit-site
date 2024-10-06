@@ -46,20 +46,28 @@ body {
 
 body::-webkit-scrollbar {
     width: 12.5px;
-    background-color: var(--secondary-blue);
+    background-color: #fff;
+    box-shadow: inset 0 0 5px #0005;
+
+    height: 40vh !important;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: var(--border-radius);
+    height: 40vh !important;
 }
 
 body::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: var(--main-purple);
+    border-radius: var(--border-radius);
+    background-color: #393e43;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: var(--gradient-violet-medium);
+    background-color: #2b2d30;
 }
 
 body::-webkit-scrollbar-thumb:active {
-    background-color: var(--gradient-violet-dark);
+    background-color: rgb(24, 24, 26);
 }
 
 /* ELEMENTS */
