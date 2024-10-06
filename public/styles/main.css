@@ -1,0 +1,77 @@
+/* VARIABLES */
+
+:root {
+    --main-purple: #a436f2;
+    --main-blue: #2b67fc;
+
+    --secondary-lavender: #d3c5e8;
+    --secondary-blue: #b4c1db;
+
+    --gradient-violet-dark: #521c89;
+    --gradient-violet-medium: #8d1af1;
+    --gradient-violet-light: #ffa5f6;
+
+    --border-radius: 4px;
+}
+
+/* ALL ELEMENTS */
+
+* {
+    color: inherit;
+    font-family: Poppins, sans-serif;
+    
+    line-height: 1;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    outline: none;
+
+    text-decoration: none;
+    appearance: none;
+
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* SCROLLBAR */
+
+body::-webkit-scrollbar {
+    width: 12.5px;
+    background-color: var(--secondary-blue);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: var(--main-purple);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--gradient-violet-medium);
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background-color: var(--gradient-violet-dark);
+}
+
+/* ELEMENTS */
+
+ul, ol {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    user-select: none;
+}
