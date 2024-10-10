@@ -16,7 +16,7 @@ const icons = [
 
 export const Hero = () => {
     return (
-        <main className='hero'>
+        <main className='hero section'>
             <div className='hero__container hero-container section-container'>
                 <HeroBackground />
                 <div className='hero__container__content hero-content'>

@@ -230,9 +230,9 @@
 
 .hero-bg-box:last-of-type::after {
     width: 5px;
-    height: 20px;
+    height: 40px;
     bottom: 0px;
-    background: linear-gradient(to bottom, #183377, #142961);
+    background: #183377;
     border: none;
     top: 50px;
     left: 30px;
