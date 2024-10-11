@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
 }
 
 .clients-location::before {
@@ -71,7 +71,7 @@
 }
 
 .clients-list {
-    padding: 0 180px;
+    padding: 0 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 48px;
