@@ -1,6 +1,7 @@
 import '../../public/styles/components/about.css'
-
-const clients = ['osep', 'adita', 'epidata', 'iosfa', 'sms-chile', 'abc-tech', 'osfatlyf', 'sindicato-luz-fuerza']
+import { Clients } from './Clients'
+import { Philosophy } from './Philosophy'
+import { Team } from './Team'
 
 export const AboutUs = () => {
     return (
@@ -10,23 +11,9 @@ export const AboutUs = () => {
                     Sobre Nosotros
                 </h2>
                 <div className='about__container__content about-content section-content'>
-                    <video className='about__container__content__video about-clients-video'
-                        autoPlay loop muted>
-                        <source src='../../public/videos/vit-clients.mp4' type='video/mp4' />
-                    </video>
-                    <span className='about__container__content__callout about-clients-callout not-selectable'>
-                        De <strong>VIT</strong> <br />para el <strong>Mundo</strong>
-                    </span>
-                </div>
-                <div className='about__container__clients about-clients'>
-                    {
-                        clients.map((client, index) =>
-                            <div key={index} className='about__container__content__clients__item about-clients-item'>
-                                <img className='about__container__content__clients__item__logo about-clients-logo'
-                                    src={`../../public/images/clients/${client}-logo.webp`} alt={`Logo de ${client.toUpperCase()}`} />
-                            </div>
-                        )
-                    }
+                    <Clients />
+                    <Philosophy />
+                    <Team />
                 </div>
             </div>
         </section>
