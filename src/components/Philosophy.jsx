@@ -1,4 +1,5 @@
 import { Icon } from './Icon'
+import { AboutHead } from './AboutHead'
 import '../../public/styles/components/philosophy.css'
 
 const icons = [
@@ -46,6 +47,7 @@ const topics = [
 export const Philosophy = () => {
     return (
         <div className="about__container__content__philosophy about-philosophy">
+            <AboutHead section={'philosophy'} number={2} callout={'Quienes somos y por qué'} title={'Nuestra Filosofía'} />
             <div className='about__container__content__philosophy__board philosophy-board'>
                 {
                     topics.map((topic, index) =>

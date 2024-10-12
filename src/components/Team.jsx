@@ -1,5 +1,6 @@
 import '../../public/styles/components/team.css'
 import { Icon } from './Icon'
+import { AboutHead } from './AboutHead'
 
 const team = [
     {
@@ -141,43 +142,46 @@ const team = [
 export const Team = () => {
     return (
         <div className="about__container__content__team about-team">
-            <div className='about__container__content__team__staff about-team-staff'>
-                {
-                    team.map((section, index) =>
-                        <div key={index} className="about__container__content__team__staff__section team-section">
-                            <h4 className="about__container__content__team__staff__section__title team-section-title">
-                                Sector {section.title}
-                            </h4>
-                            <ol className="about__container__content__team__staff__section__list team-section-list">
-                                {
-                                    section.members.map((member, index) =>
-                                        <li key={index} className="about__container__content__team__staff__section__list__item team-section-member">
-                                            <a target="_blank" className='about__container__content__team__staff__section__list__item__link team-member-link' href={member.linkedin}>
-                                                <Icon className="about__container__content__team__staff__section__list__item__link__icon team-member-icon">
-                                                    {member.icon}
-                                                </Icon>
-                                                <div className='about__container__content__team__staff__section__list__item__link__data team-member-data'>
-                                                    <span className="about__container__content__team__staff__section__list__item__link__data__name team-member-name">
-                                                        {member.name}
-                                                    </span>
-                                                    <span className="about__container__content__team__staff__section__list__item__link__data__role team-member-role">
-                                                        {member.role}
-                                                    </span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    )
-                                }
-                            </ol>
-                        </div>
-                    )
-                }
-            </div>
-            <div className='about__container__content__team__banner about-team-banner'>
-                <img className='about__container__content__team__banner__photo team-banner-photo'
-                src="../../public/images/photos/vit-team-photo.webp" alt="Foto del Equipo de VIT" />
-                <img className='about__container__content__team__banner__photo team-banner-photo'
-                src="../../public/images/photos/vit-meet-photo.webp" alt="Foto de una Reunión del Equipo de VIT" />
+            <AboutHead section={'team'} number={3} callout={'Tus próximos aliados'} title={'Nuestro Equipo'} />
+            <div className="about__container__content__team__box about-team-box">
+                <div className='about__container__content__team__box__staff about-team-staff'>
+                    {
+                        team.map((section, index) =>
+                            <div key={index} className="about__container__content__team__box__staff__section team-section">
+                                <h4 className="about__container__content__team__box__staff__section__title team-section-title">
+                                    Sector {section.title}
+                                </h4>
+                                <ol className="about__container__content__team__box__staff__section__list team-section-list">
+                                    {
+                                        section.members.map((member, index) =>
+                                            <li key={index} className="about__container__content__team__box__staff__section__list__item team-section-member">
+                                                <a target="_blank" className='about__container__content__team__box__staff__section__list__item__link team-member-link' href={member.linkedin}>
+                                                    <Icon className="about__container__content__team__box__staff__section__list__item__link__icon team-member-icon">
+                                                        {member.icon}
+                                                    </Icon>
+                                                    <div className='about__container__content__team__box__staff__section__list__item__link__data team-member-data'>
+                                                        <span className="about__container__content__team__box__staff__section__list__item__link__data__name team-member-name">
+                                                            {member.name}
+                                                        </span>
+                                                        <span className="about__container__content__team__box__staff__section__list__item__link__data__role team-member-role">
+                                                            {member.role}
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        )
+                                    }
+                                </ol>
+                            </div>
+                        )
+                    }
+                </div>
+                <div className='about__container__content__team__box__banner about-team-banner'>
+                    <img className='about__container__content__team__box__banner__photo team-banner-photo'
+                        src="../../public/images/photos/vit-team-photo.webp" alt="Foto del Equipo de VIT" />
+                    <img className='about__container__content__team__box__banner__photo team-banner-photo'
+                        src="../../public/images/photos/vit-meet-photo.webp" alt="Foto de una Reunión del Equipo de VIT" />
+                </div>
             </div>
         </div>
     )

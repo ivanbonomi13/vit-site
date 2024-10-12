@@ -1,4 +1,22 @@
 .about-team {
+    margin-top: 135px;
+}
+
+.team-head-box {
+    border: 3px solid var(--main-purple);
+    box-shadow: 0 0 20px #a436f270;
+}
+
+.team-head-number {
+    color: var(--main-purple);
+    text-shadow: 0 0 10px #a436f247;
+}
+
+.team-head-callout {
+    color: var(--main-purple);
+}
+
+.about-team-box {
     display: flex;
     align-items: center;
 

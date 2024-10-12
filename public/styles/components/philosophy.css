@@ -1,5 +1,19 @@
 .about-philosophy {
-    margin-top: 250px;
+    margin-top: 135px;
+}
+
+.philosophy-head-box {
+    border: 3px solid var(--main-blue);
+    box-shadow: 0 0 20px #2b67fc47;
+}
+
+.philosophy-head-number {
+    color: var(--main-blue);
+    text-shadow: 0 0 10px #2b67fc47;
+}
+
+.philosophy-head-callout {
+    color: var(--main-blue);
 }
 
 .philosophy-board {
@@ -7,6 +21,7 @@
     align-items: start;
     justify-content: space-between;
     position: relative;
+    margin-top: 200px;
 }
 
 .philosophy-board:before {
