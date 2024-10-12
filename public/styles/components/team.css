@@ -103,22 +103,3 @@
 .team-banner-photo:active {
     transform: rotate3d(-.1, .2, .03, 30deg) scale(.95) translateX(47px);
 }
-
-.about-team-banner::before, .about-team-banner::after {
-    content: '';
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.038);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    left: 50%;
-    width: 50vw;
-    height: 8px;
-    z-index: -2;
-}
-
-.about-team-banner::before {
-    top: 75%;
-}
-
-.about-team-banner::after {
-    top: 25%;
-}

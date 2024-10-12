@@ -47,6 +47,10 @@
     justify-content: center;
     transform: translateX(-50%);
     z-index: 28;
+    background-color: #2a4281;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 2px 10px #00000032;
 }
 
 .philosophy-pad-icon {
@@ -54,11 +58,8 @@
     width: 68px;
     stroke-width: 2;
     stroke: #fff;
-    border-radius: 50%;
     padding: 10px;
-    background-color: #2a4281;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    box-shadow: 0 2px 10px #00000032;
+    filter: drop-shadow(0 0 8px #fff6);
     z-index: 28;
 }
 
@@ -68,6 +69,7 @@
     font-weight: 700;
     font-size: 26px;
     margin-bottom: 22px;
+    text-shadow: 0 0 8px #fff2;
 }
 
 .philosophy-pad-text {
@@ -75,6 +77,7 @@
     font-weight: 300;
     text-wrap: balance;
     line-height: 1.5;
+    text-shadow: 0 0 15px #0005;
 }
 
 .philosophy-pad-text strong {
