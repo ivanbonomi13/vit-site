@@ -1,6 +1,6 @@
 .clients-head-box {
     border: 3px solid var(--main-purple);
-    box-shadow: 0 0 20px #a436f270;
+    box-shadow: 0 0 20px #a436f270, inset 0 0 20px #a436f270;
 }
 
 .clients-head-number {

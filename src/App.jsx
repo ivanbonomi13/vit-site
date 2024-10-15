@@ -4,6 +4,7 @@ import '../public/styles/classes.css'
 
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
+import { Data } from './components/Data'
 import { AboutUs } from './components/AboutUs'
 
 export const App = () => {
@@ -11,6 +12,7 @@ export const App = () => {
         <>
             <Header />
             <Hero />
+            <Data />
             <AboutUs />
         </>
     )

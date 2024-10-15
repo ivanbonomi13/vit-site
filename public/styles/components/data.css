@@ -1,0 +1,131 @@
+.data-content {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 30px;
+}
+
+.data-pad {
+    border-radius: var(--border-radius);
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px #00000026;
+}
+
+.data-pad:first-of-type {
+    grid-column: 4 / 7;
+    grid-row: 1 / 2;
+}
+
+.data-pad:nth-of-type(2) {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+.data-pad:nth-of-type(3) {
+    grid-column: 4 / 7;
+    grid-row: 2 / 3;
+}
+
+.data-pad:nth-of-type(4) {
+    grid-column: 7 / 10;
+    grid-row: 2 / 3;
+}
+
+.data-pad:nth-of-type(5) {
+    grid-column: 7 / 10;
+    grid-row: 1 / 2;
+}
+
+.data-pad:last-of-type {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.data-pad-simple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.data-pad-simple-icon {
+    stroke: #fff;
+    stroke-width: 2;
+    width: 44px;
+    margin-right: 10px;
+}
+
+.data-pad-simple-amount {
+    letter-spacing: 6px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    transform: translateX(6px);
+    margin-right: 22px;
+}
+
+.data-pad-simple-title {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.data-pad-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.data-pad-head-icon {
+    stroke: #fff;
+    stroke-width: 2;
+    width: 44px;
+    margin-right: 10px;
+}
+
+.data-pad-head-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.data-pad-amount {
+    display: block;
+    letter-spacing: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    transform: translateX(5px);
+}
+
+.data-pad:first-of-type > .data-pad-amount {
+    font-size: 90px;
+}
+
+.data-pad-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.data-pad-list-item-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.data-pad-list-item-amount {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    transform: translateX(3px);
+    color: #dfdfdf;
+    display: block;
+    text-align: center;
+}
