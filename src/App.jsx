@@ -5,6 +5,7 @@ import '../public/styles/classes.css'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Data } from './components/Data'
+import { Stack } from './components/Stack'
 import { AboutUs } from './components/AboutUs'
 
 export const App = () => {

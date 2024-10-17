@@ -1,0 +1,17 @@
+.about-stack {
+    margin-top: 135px;
+}
+
+.stack-head-box {
+    border: 3px solid var(--main-blue);
+    box-shadow: 0 0 20px #2b67fc47, inset 0 0 20px #2b67fc47;
+}
+
+.stack-head-number {
+    color: var(--main-blue);
+    text-shadow: 0 0 10px #2b67fc47;
+}
+
+.stack-head-callout {
+    color: var(--main-blue);
+}
