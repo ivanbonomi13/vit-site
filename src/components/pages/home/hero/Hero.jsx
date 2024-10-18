@@ -1,6 +1,6 @@
-import '../../public/styles/components/hero.css'
+import '../../../../../public/styles/components/hero.css'
 import { HeroBackground } from './HeroBackground'
-import { Icon } from './Icon'
+import { Icon } from '../../../Icon'
 
 const icons = [
     <>

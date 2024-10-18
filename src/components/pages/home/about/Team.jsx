@@ -1,5 +1,5 @@
-import '../../public/styles/components/team.css'
-import { Icon } from './Icon'
+import '../../../../../public/styles/components/team.css'
+import { Icon } from '../../../Icon'
 import { AboutHead } from './AboutHead'
 
 const team = [
@@ -141,7 +141,7 @@ const team = [
 
 export const Team = () => {
     return (
-        <div className="about__container__content__team about-team">
+        <div id='team' className="about__container__content__team about-team">
             <AboutHead section={'team'} number={4} callout={'Tus próximos aliados'} title={'Nuestro Equipo'} />
             <div className="about__container__content__team__box about-team-box">
                 <div className='about__container__content__team__box__staff about-team-staff'>

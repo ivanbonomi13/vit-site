@@ -1,10 +1,10 @@
 import { AboutHead } from './AboutHead'
-import '../../public/styles/components/clients.css'
+import '../../../../../public/styles/components/clients.css'
 const clients = ['osep', 'adita', 'epidata', 'iosfa', 'sms-chile', 'abc-tech', 'osfatlyf', 'sindicato-luz-fuerza']
 
 export const Clients = () => {
     return (
-        <div className='about__container__content__clients  about-clients'>
+        <div id='clients' className='about__container__content__clients  about-clients'>
             <AboutHead section={'clients'} number={2} callout={'Quienes confían en nosotros'} title={'Nuestros Clientes'} />
             <div className='about__container__content__clients__locations clients-location'>
                 <video className='about__container__content__clients__locations__video clients-location-video'

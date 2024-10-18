@@ -1,4 +1,4 @@
-import '../../public/styles/components/data.css'
+import '../../../../../public/styles/components/data.css'
 import { DataPad } from './DataPad'
 
 const data = [

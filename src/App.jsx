@@ -2,19 +2,22 @@ import '../public/styles/main.css'
 import '../public/styles/font.css'
 import '../public/styles/classes.css'
 
-import { Header } from './components/Header'
-import { Hero } from './components/Hero'
-import { Data } from './components/Data'
-import { Stack } from './components/Stack'
-import { AboutUs } from './components/AboutUs'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Header } from './components/site/Header'
+import { Footer } from './components/site/Footer'
+import { LandingPage } from './components/pages/home/LandingPage'
 
 export const App = () => {
     return (
-        <>
+        <Router>
             <Header />
-            <Hero />
-            <Data />
-            <AboutUs />
-        </>
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                {/* <Route path="/data" element={<></>} />
+                <Route path="/about" element={<></>} />
+                <Route path="/contact" element={<></>} /> */}
+            </Routes>
+            <Footer />
+        </Router>
     )
 }

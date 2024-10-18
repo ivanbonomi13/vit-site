@@ -1,6 +1,6 @@
-import '../../public/styles/components/stack.css'
+import '../../../../../public/styles/components/stack.css'
 import { AboutHead } from './AboutHead'
-import { Icon } from './Icon'
+import { Icon } from '../../../Icon'
 
 const sections = [
     {
@@ -35,7 +35,7 @@ const sections = [
 
 export const Stack = () => {
     return (
-        <div className="about__container__content__stack about-stack">
+        <div id='stack' className="about__container__content__stack about-stack">
             <AboutHead section={'stack'} number={'1'} callout={'Las herramientas de VIT'} title={'Nuestro Stack'} />
             <div className='about__container__content__stack__board about-stack-board'>
                 {
