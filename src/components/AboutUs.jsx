@@ -1,8 +1,9 @@
 import '../../public/styles/components/about.css'
-import {Stack} from './Stack'
+import { Stack } from './Stack'
 import { Clients } from './Clients'
 import { Philosophy } from './Philosophy'
 import { Team } from './Team'
+import { Icon } from './Icon'
 
 export const AboutUs = () => {
     return (

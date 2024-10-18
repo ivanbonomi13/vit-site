@@ -5,7 +5,7 @@ const clients = ['osep', 'adita', 'epidata', 'iosfa', 'sms-chile', 'abc-tech', '
 export const Clients = () => {
     return (
         <div className='about__container__content__clients  about-clients'>
-            <AboutHead section={'clients'} number={1} callout={'Quienes confían en nosotros'} title={'Nuestros Clientes'} />
+            <AboutHead section={'clients'} number={2} callout={'Quienes confían en nosotros'} title={'Nuestros Clientes'} />
             <div className='about__container__content__clients__locations clients-location'>
                 <video className='about__container__content__clients__locations__video clients-location-video'
                     autoPlay loop muted>

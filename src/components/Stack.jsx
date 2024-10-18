@@ -36,7 +36,7 @@ const sections = [
 export const Stack = () => {
     return (
         <div className="about__container__content__stack about-stack">
-            <AboutHead section={'stack'} number={'0'} callout={'Las herramientas de VIT'} title={'Nuestro Stack'} />
+            <AboutHead section={'stack'} number={'1'} callout={'Las herramientas de VIT'} title={'Nuestro Stack'} />
             <div className='about__container__content__stack__board about-stack-board'>
                 {
                     sections.map((section, index) =>
@@ -45,7 +45,7 @@ export const Stack = () => {
                                 <Icon className={'about__container__stack__board__section__head__icon about-stack-section-head-icon'}>
                                     {section.icon}
                                 </Icon>
-                                <h3 className='about__container__stack__board__section__head__title about-stack-section-head-title'>
+                                <h3 className='about__container__stack__board__section__head__title not-selectable about-stack-section-head-title'>
                                     {section.title}
                                 </h3>
                             </div>

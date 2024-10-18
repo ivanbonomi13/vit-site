@@ -142,7 +142,7 @@ const team = [
 export const Team = () => {
     return (
         <div className="about__container__content__team about-team">
-            <AboutHead section={'team'} number={3} callout={'Tus próximos aliados'} title={'Nuestro Equipo'} />
+            <AboutHead section={'team'} number={4} callout={'Tus próximos aliados'} title={'Nuestro Equipo'} />
             <div className="about__container__content__team__box about-team-box">
                 <div className='about__container__content__team__box__staff about-team-staff'>
                     {
