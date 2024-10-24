@@ -1,3 +1,5 @@
+/* HEADER */
+
 .header {
     padding: 20px 0;
     box-shadow: 0 0 20px #0003;
@@ -21,17 +23,18 @@
     flex: 1;
 }
 
-.header-logo {
-    width: 185px;
-    transition: transform .2s ease-in-out;
-}
-
 .header-logo-link:hover>.header-logo {
     transform: scale(1.02);
 }
 
 .header-logo-link:active>.header-logo {
     transform: scale(.98);
+}
+
+.header-logo {
+    width: 185px;
+    transition:
+        transform .2s ease-in-out;
 }
 
 /* NAV */
@@ -52,15 +55,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     padding: 5px 10px;
     border-radius: var(--border-radius);
-    transition: background-color .2s ease-in-out, transform .2s ease-in-out;
+
+    transition:
+        background-color .2s ease-in-out,
+        transform .2s ease-in-out;
 }
 
 .nav-link:hover {
     background-color: #b4c1db2d;
 }
-
 
 .nav-link:active {
     transform: scale(.95);
@@ -68,8 +74,10 @@
 
 .nav-link-icon {
     width: 0;
+
+    stroke: var(--main-black);
     stroke-width: 2;
-    stroke: #32324d;
+
     transition:
         margin-right .2s ease-in-out,
         stroke .2s ease-in-out,
@@ -85,7 +93,9 @@
 .nav-link-text {
     font-size: 15px;
     font-weight: 500;
-    color: #32324d;
+    color: var(--main-black);
+    transition:
+        color .2s ease-in-out;
 }
 
 .nav-link:hover>.nav-link-text {
@@ -96,15 +106,19 @@
 
 .contact-button {
     margin-left: auto;
-    transition: transform .2s ease-in-out;
+    transition:
+        transform .2s ease-in-out;
 }
 
 .contact-button>.nav-link {
     box-shadow: 0 0 5px #0003;
     background-color: var(--main-blue);
+
     padding: 14.5px 19px;
     border-radius: var(--border-radius);
-    transition: background-color .2s ease-in-out;
+
+    transition:
+        background-color .2s ease-in-out;
 }
 
 .contact-button>.nav-link:hover {
@@ -127,10 +141,6 @@
     background-color: #1b42a3;
 }
 
-.contact-button>.nav-link>.nav-link-icon {
-    stroke: #fff;
-}
-
 .header-social {
     display: flex;
     align-items: center;
@@ -143,7 +153,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform .2s ease-in-out;
+
+    transition:
+        transform .2s ease-in-out;
 }
 
 .header-social-link:not(:last-of-type) {
@@ -169,7 +181,9 @@
 .header-social-icon {
     width: 26px;
     stroke-width: 2;
-    stroke: #32324d;
+    stroke: var(--main-black);
+
     filter: drop-shadow(0 0 5px #0003);
-    transition: stroke .2s ease-in-out;
+    transition:
+        stroke .2s ease-in-out;
 }

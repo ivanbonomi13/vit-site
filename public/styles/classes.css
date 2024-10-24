@@ -63,3 +63,8 @@
     font-size: 45px;
     text-shadow: 0 0 25px #0004;
 }
+
+.icon {
+    color: #fff;
+    stroke: 2;
+}
