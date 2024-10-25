@@ -199,12 +199,60 @@ const icons = [
                 ]
             }
         ]
-    }
+    },
+    {
+        'section': 'data', // DATA
+        'list': [
+            {
+                'name': 'users',
+                'icon':
+                    <>
+                        <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                    </>
+            },
+            {
+                'name': 'environments',
+                'icon':
+                    <>
+                        <path d="M3 5h6v14h-6z" />
+                        <path d="M12 9h10v7h-10z" />
+                        <path d="M14 19h6" />
+                        <path d="M17 16v3" />
+                        <path d="M6 13v.01" />
+                        <path d="M6 16v.01" />
+                    </>
+            },
+            {
+                'name': 'servers',
+                'icon':
+                    <>
+                        <path d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+                        <path d="M3 12m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v2a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+                        <path d="M7 8l0 .01" />
+                        <path d="M7 16l0 .01" />
+                        <path d="M11 8h6" />
+                        <path d="M11 16h6" />
+                    </>
+            },
+            {
+                'name': 'databases',
+                'icon':
+                    <>
+                        <path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+                        <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+                        <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+                    </>
+            }
+        ]
+    },
 ]
 
 export const getIcons = (section, part, name) => {
     const sectionIcons = icons.find(item => item.section === section)
-    if (part === undefined) return icons.find(item => item.section === section).list.find(item => item.name === name).icon
+    if (part === undefined) return sectionIcons.list.find(item => item.name === name).icon
     else if (name === undefined) return sectionIcons.parts.find(item => item.title === part).list
     return sectionIcons.parts.find(item => item.title === part).list.find(item => item.name === name).icon
 }
