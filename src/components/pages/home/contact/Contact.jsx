@@ -1,4 +1,6 @@
 import '../../../../../public/styles/components/contact.css'
+
+import { getIcons } from '../../../Icons'
 import { Icon } from '../../../Icon'
 import { useState, useRef, useEffect } from 'react'
 import { ContactFill } from './ContactFill'
@@ -8,46 +10,28 @@ const content = [
         'type': 'text',
         'name': 'name',
         'text': 'Nombre Completo',
-        'icon':
-            <>
-                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
-                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-            </>,
+        'icon': getIcons('contact', 'form', 'name'),
         'placeHolder': 'Juan Pérez'
     },
     {
         'type': 'email',
         'name': 'email',
         'text': 'Email de Contacto',
-        'icon':
-            <>
-                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                <path d="M3 7l9 6l9 -6" />
-            </>,
+        'icon': getIcons('contact', 'form', 'email'),
         'placeHolder': 'usuario@vit.com'
     },
     {
         'type': 'tel',
         'name': 'phone',
         'text': 'Número de Teléfono',
-        'icon':
-            <>
-                <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
-                <path d="M11 4h2" />
-                <path d="M12 17v.01" />
-            </>,
+        'icon': getIcons('contact', 'form', 'phone'),
         'placeHolder': '+54 9 11 0000-0000'
     },
     {
         'type': 'select',
         'name': 'services',
         'text': 'Servicios de VIT',
-        'icon':
-            <>
-                <path d="M6 16m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                <path d="M16 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                <path d="M14.5 7.5m-4.5 0a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0 -9 0" />
-            </>,
+        'icon': getIcons('contact', 'form', 'services'),
         'options': [
             'Elije Uno', 'Outsourcing IT', 'Desarrollo', 'DevOps'
         ]
@@ -56,12 +40,7 @@ const content = [
         'type': 'textarea',
         'name': 'message',
         'text': 'Déjanos un Mensaje',
-        'icon':
-            <>
-                <path d="M8 9h8" />
-                <path d="M8 13h6" />
-                <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
-            </>,
+        'icon': getIcons('contact', 'form', 'message'),
         'placeHolder': 'Me interesa...'
     }
 ]
@@ -69,17 +48,11 @@ const content = [
 const buttons = [
     {
         'name': 'Anterior',
-        'icon':
-            <>
-                <path d="M15 6l-6 6l6 6" />
-            </>
+        'icon': getIcons('contact', 'buttons', 'arrow-left'),
     },
     {
         'name': 'Siguiente',
-        'icon':
-            <>
-                <path d="M9 6l6 6l-6 6" />
-            </>
+        'icon': getIcons('contact', 'buttons', 'arrow-right'),
     }
 ]
 

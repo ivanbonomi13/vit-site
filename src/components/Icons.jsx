@@ -3,7 +3,7 @@ const icons = [
         'section': 'header', // HEADER
         'parts': [
             {
-                'title': 'nav', // HEADER NAV
+                'title': 'nav', // HEADER - NAV
                 'list': [
                     {
                         'name': 'home',
@@ -56,7 +56,7 @@ const icons = [
                 ]
             },
             {
-                'title': 'social',  // HEADER SOCIAL
+                'title': 'social',  // HEADER - SOCIAL
                 'list': [
                     {
                         'name': 'instagram',
@@ -93,7 +93,7 @@ const icons = [
         'section': 'hero', // HERO
         'parts': [
             {
-                'title': 'ad', // HERO AD
+                'title': 'ad', // HERO - AD
                 'list': [
                     {
                         'name': 'terraform',
@@ -115,7 +115,7 @@ const icons = [
                 ]
             },
             {
-                'title': 'bg', // HERO BACKGROUND
+                'title': 'bg', // HERO - BACKGROUND
                 'list': [
                     {
                         'name': 'console',
@@ -411,8 +411,8 @@ const icons = [
                         'icon':
                             <>
                                 <path d="M7 8l-4 4l4 4" />
-                        <path d="M17 8l4 4l-4 4" />
-                        <path d="M14 4l-4 16" />
+                                <path d="M17 8l4 4l-4 4" />
+                                <path d="M14 4l-4 16" />
                             </>
                     },
                     {
@@ -420,9 +420,81 @@ const icons = [
                         'icon':
                             <>
                                 <path d="M4 14v-3a8 8 0 1 1 16 0v3" />
-                        <path d="M18 19c0 1.657 -2.686 3 -6 3" />
-                        <path d="M4 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z" />
-                        <path d="M15 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z" />
+                                <path d="M18 19c0 1.657 -2.686 3 -6 3" />
+                                <path d="M4 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z" />
+                                <path d="M15 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z" />
+                            </>
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        'section': 'contact', // CONTACT
+        'parts': [
+            {
+                'title': 'form', // CONTACT - FORM
+                'list': [
+                    {
+                        'name': 'name',
+                        'icon':
+                            <>
+                                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                            </>
+                    },
+                    {
+                        'name': 'email',
+                        'icon':
+                            <>
+                                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                                <path d="M3 7l9 6l9 -6" />
+                            </>
+                    },
+                    {
+                        'name': 'phone',
+                        'icon':
+                            <>
+                                <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
+                                <path d="M11 4h2" />
+                                <path d="M12 17v.01" />
+                            </>
+                    },
+                    {
+                        'name': 'services',
+                        'icon':
+                            <>
+                                <path d="M6 16m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M16 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                <path d="M14.5 7.5m-4.5 0a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0 -9 0" />
+                            </>
+                    },
+                    {
+                        'name': 'message',
+                        'icon':
+                            <>
+                                <path d="M8 9h8" />
+                                <path d="M8 13h6" />
+                                <path d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                            </>
+                    }
+                ]
+            },
+            {
+                'title': 'buttons', // CONTACT - BUTTONS
+                'list': [
+                    {
+                        'name': 'arrow-left',
+                        'icon':
+                            <>
+                                <path d="M15 6l-6 6l6 6" />
+                            </>
+                    },
+                    {
+                        'name': 'arrow-right',
+                        'icon':
+                            <>
+                                <path d="M9 6l6 6l-6 6" />
                             </>
                     }
                 ]
