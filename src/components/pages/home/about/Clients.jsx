@@ -1,6 +1,39 @@
 import { AboutHead } from './AboutHead'
 import '../../../../../public/styles/components/clients.css'
-const clients = ['osep', 'adita', 'epidata', 'iosfa', 'sms-chile', 'abc-tech', 'osfatlyf', 'sindicato-luz-fuerza']
+const clients = [
+    {
+        'name': 'osep',
+        'url': 'https://osepmendoza.com.ar/web/'
+    },
+    {
+        'name': 'adita',
+        'url': 'https://www.aditasrl.com.ar/'
+    },
+    {
+        'name': 'epidata',
+        'url': 'https://epidata.net/es/'
+    },
+    {
+        'name': 'iosfa',
+        'url': 'https://iosfa.gob.ar/'
+    },
+    {
+        'name': 'sms-chile',
+        'url': 'https://smslatam.com/'
+    },
+    {
+        'name': 'abc-tech',
+        'url': 'https://abctech.com.ar/'
+    },
+    {
+        'name': 'osfatlyf',
+        'url': 'https://osfatlyf.org/'
+    },
+    {
+        'name': 'sindicato-luz-fuerza',
+        'url': 'https://www.sind-luzyfuerza-cap.org.ar/slyf/'
+    }
+]
 
 export const Clients = () => {
     return (
@@ -19,8 +52,10 @@ export const Clients = () => {
                 {
                     clients.map((client, index) =>
                         <li key={index} className='about__container__content__clients__list__item clients-list-item'>
-                            <img className='about__container__content__clients__list__item__logo clients-list-item-logo'
-                                src={`../../public/images/clients/${client}-logo.webp`} alt={`Logo de ${client.toUpperCase()}`} />
+                            <a target='_blank' className='about__container__content__clients__list__item__link clients-list-link' href={client.url}>
+                                <img className='about__container__content__clients__list__item__logo clients-list-item-logo'
+                                    src={`../../public/images/clients/${client.name}-logo.webp`} alt={`Logo de ${client.name.toUpperCase()}`} />
+                            </a>
                         </li>
                     )
                 }
