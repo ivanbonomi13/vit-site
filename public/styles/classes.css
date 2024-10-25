@@ -27,43 +27,6 @@
     text-shadow: 0 0 20px #0005;
 }
 
-.about-head {
-    text-align: center;
-    margin-bottom: 130px;
-    color: #fff;
-}
-
-.about-head-box {
-    margin: auto;
-    border-radius: 50%;
-    width: fit-content;
-    aspect-ratio: 1/1;
-    border: 3px solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 68px;
-    aspect-ratio: 1 / 1;
-    margin-bottom: 60px;
-}
-
-.about-head-number {
-    font-size: 32px;
-    font-weight: 800;
-}
-
-.about-head-callout {
-    font-size: 23px;
-    font-weight: 600;
-    text-shadow: 0 0 15px #0005;
-}
-
-.about-head-title {
-    margin-top: 12px;
-    font-size: 45px;
-    text-shadow: 0 0 25px #0004;
-}
-
 .icon {
     color: #fff;
     stroke: 2;

@@ -95,5 +95,4 @@ export const getIcons = (section, part, name) => {
     const sectionIcons = icons.find(item => item.section === section)
     if (part === undefined) return icons.find(item => item.section === section).list.find(item => item.name === name).icon
     return sectionIcons.parts.find(item => item.title === part).list.find(item => item.name === name).icon
-
 }
