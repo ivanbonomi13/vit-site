@@ -83,8 +83,8 @@
 }
 
 .hero-bg-box:nth-of-type(2):after {
-    width: 201px;
-    height: 95.5px;
+    width: 203px;
+    height: 175.5px;
 
     top: 50%;
     left: 50%;
@@ -95,7 +95,7 @@
 
     transform: translate(-3.5px, -.5px);
     background: none;
-    z-index: -3;
+    z-index: -8;
     opacity: 1 !important;
 }
 
@@ -152,7 +152,7 @@
     top: 500px;
     left: 268px;
 
-    z-index: -2;
+    z-index: 2;
 
     transition:
         transform 1s ease-in-out;
@@ -160,7 +160,7 @@
 
 .hero-bg-box:nth-of-type(4):after {
     width: 231.5px;
-    height: 95.5px;
+    height: 175.5px;
 
     border: 8px solid rgba(255, 255, 255, 0.038);
     border-top-right-radius: 22px;
@@ -169,7 +169,7 @@
     
     top: 50%;
     left: 50%;
-    transform: translate(calc(-100% + 4px), -100%);
+    transform: translate(calc(-100% + 4px), calc(-100% + 80px));
     
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14), 0 0 0 1px rgba(255, 255, 255, 0.14);
     background: none;
@@ -177,14 +177,6 @@
 }
 
 .hero-bg-box:nth-of-type(4):before {
-    width: 8px;
-    height: 100px;
-
-    top: 50%;
-    left: 50%;
-    
-    transform: translate(-50%, 0);
-    z-index: -5;
 }
 
 /* SERVER */
@@ -206,7 +198,7 @@
 }
 
 .hero-bg-box:nth-of-type(6)::after {
-    width: 135px;
+    width: 138px;
     height: 215px;
 
     border-bottom-right-radius: 22px;
@@ -225,11 +217,11 @@
 }
 
 .hero-bg-box:nth-of-type(6)::before {
-    width: 135px;
+    width: 138px;
     height: 212px;
 
     bottom: -182px;
-    left: -112px;
+    left: -120px;
 
     border: 10px solid #183377;
     border-bottom: none;
