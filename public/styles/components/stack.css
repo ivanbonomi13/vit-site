@@ -23,19 +23,22 @@
 }
 
 .about-stack-section {
-    border-radius: var(--border-radius);
     padding: 42px;
-    background-color: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--border-radius);
+    margin: 0 50px;
+
+    background-color: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 10px #00000026;
+
     width: 50%;
     overflow-x: hidden;
-    margin: 0 50px;
-    transition: transform .2s ease-in-out;
+    transition:
+        transform .2s ease-in-out;
 }
 
-.about-stack-section:hover  {
+.about-stack-section:hover {
     transform: scale(1.03);
 }
 
@@ -63,6 +66,7 @@
 .about-stack-section-head {
     margin-bottom: 75px;
     position: relative;
+
     display: flex;
     justify-content: start;
     align-items: center;
@@ -72,16 +76,20 @@
     position: absolute;
     stroke: #fff;
     stroke-width: 2;
+
     width: 0;
     filter: drop-shadow(0 0 20px #000a);
-    transition: width .2s ease-in-out;
+    transition:
+        width .2s ease-in-out;
 }
 
 .about-stack-section-head-title {
     color: #fff;
     font-size: 32px;
     text-shadow: 0 0 20px #0003;
-    transition: margin-left .2s ease-in-out;
+
+    transition:
+        margin-left .2s ease-in-out;
 }
 
 .about-stack-section-carousel {
@@ -89,15 +97,17 @@
 }
 
 .about-stack-section-carousel-group {
-    animation: logo-carousel 8s linear infinite;
     display: flex;
     align-items: center;
+    animation:
+        logo-carousel 8s linear infinite;
 }
 
 .about-stack-section-carousel-logo {
     margin-right: 75px;
     filter: contrast(0) brightness(1.48) drop-shadow(0 0 10px #0003);
-    transition: filter .2s ease-in-out;
+    transition:
+        filter .2s ease-in-out;
 }
 
 .about-stack-section-carousel-logo:first-of-type {
