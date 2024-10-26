@@ -13,6 +13,7 @@
 
     color: #fff;
     height: 100vh;
+    max-height: calc(1280px * 0.5);
 
     display: flex;
     align-items: center;
@@ -156,7 +157,7 @@
     user-select: none;
     font-size: 16.5px;
     font-weight: 600;
-    
+
     filter: drop-shadow(0 0 10px #fff8);
     transition:
         margin-left .2s ease-in-out;

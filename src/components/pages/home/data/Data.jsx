@@ -1,5 +1,6 @@
 import '../../../../../public/styles/components/data.css'
 
+import { Section } from '../../../Section'
 import { getIcons } from '../../../Icons'
 import { DataPad } from './DataPad'
 
@@ -67,16 +68,11 @@ const data = [
 
 export const Data = () => {
     return (
-        <section className='data section'>
-            <div className='data__container data-container section-container'>
-                <div className='data__container__content data-content section-content'>
-                    {
-                        data.map((item, index) =>
-                            <DataPad key={index} title={item.title} icon={item.icon} amount={item.amount} types={item.types} />
-                        )
-                    }
-                </div>
-            </div>
-        </section>
+        <Section id={'data'} className={'data'}>
+            {
+                data.map((item, index) =>
+                    <DataPad key={index} title={item.title} icon={item.icon} amount={item.amount} types={item.types} />)
+            }
+        </Section>
     )
 }
