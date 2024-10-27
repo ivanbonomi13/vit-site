@@ -1,15 +1,18 @@
 import '../../../../../public/styles/components/hero.css'
 
+import { useState } from 'react';
+
 import { getIcons } from '../../../Icons';
 
 import { HeroBackground } from './HeroBackground'
 import { Icon } from '../../../Icon'
 
 export const Hero = () => {
+    const [mouseOver, setMouseOver] = useState(false)
     return (
         <main className='hero section'>
             <div className='hero__container hero-container section-container'>
-                <HeroBackground />
+                <HeroBackground mouseOverCta={mouseOver}/>
                 <div className='hero__container__content hero-content'>
                     <div className='hero__container__content__ad hero-top-ad'>
                         <span className='hero__container__content__ad__box hero-top-ad-box not-selectable'>
@@ -38,7 +41,7 @@ export const Hero = () => {
                         Líderes en optimización de procesos.<br />
                         Expertos en construir mejores negocios.
                     </span>
-                    <a className='hero__container__content__cta hero-cta' href=''>
+                    <a className='hero__container__content__cta hero-cta' href='#' onMouseOut={() => setMouseOver(false)} onMouseOver={() => setMouseOver(true)}>
                         <img className='hero__container__content__cta__logo hero-cta-logo'
                             src="../../public/images/logo/logo-icon.webp" alt="Ícono del Logo de VIT" />
                         <span className='hero__container__content__cta__text hero-cta-text'>
