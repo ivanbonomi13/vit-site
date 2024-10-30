@@ -7,28 +7,55 @@
 
 .footer-container {
     padding: 55px 0;
+}
+
+.footer-top {
+    padding-bottom: 50px;
     display: flex;
     align-items: start;
+    border-bottom: 1px solid #000a;
 }
 
 .footer-banner {
-    padding-right: 60px;
+    max-width: 250px;
 }
 
 .footer-banner>* {
     display: block;
 }
 
-.footer-banner-logo {
-    width: 180px;
+.footer-banner-link {
+    transition: transform .2s ease;
     margin-bottom: 26px;
 }
 
+.footer-banner-link:hover {
+    transform: scale(1.03);
+}
+
+.footer-banner-link:active {
+    transform: scale(.98);
+}
+
+.footer-banner-logo {
+    width: 180px;
+}
+
 .footer-banner-callout {
-    color: #646464;
-    line-height: 1.2;
-    font-size: 15px;
-    font-weight: 400;
+    color: #414141;
+    line-height: 1.4;
+    font-size: 12px;
+    font-weight: 300;
+    width: fit-content;
+}
+
+.footer-banner-callout strong {
+    font-weight: 500;
+    color: var(--main-purple);
+}
+
+.footer-banner-callout strong:first-of-type {
+    color: var(--main-blue);
 }
 
 .footer-grid {
@@ -43,25 +70,24 @@
 }
 
 .footer-section-title {
-    font-size: 18px;
-    margin-bottom: 15px;
+    text-wrap: nowrap !important;
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #223a75;
 }
 
 .footer-grid {
-    border: 1px solid #0008;
-    border-top: none;
-    border-bottom: none;
-    padding-left: 60px;
+    padding-left: 90px;
 }
 
 .footer-section-link {
+    text-wrap: nowrap !important;
     display: inline-block;
     font-size: 14px;
     transition:
         transform .2s ease-in-out,
         color .2s ease-in-out;
 }
-
 
 .footer-section-link:hover {
     color: var(--main-purple);
@@ -74,7 +100,12 @@
 }
 
 .footer-section-item:not(:last-of-type) {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.footer-section-link {
+    font-size: 13px;
+    color: #000a;
 }
 
 .footer-offices {
@@ -85,12 +116,13 @@
 }
 
 .footer-offices-title {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 16px;
+    margin-bottom: 22px;
+    color: #5a297e;
 }
 
 .footer-offices-list {
-    margin-bottom: 25px;
+    margin-bottom: 36px;
 }
 
 .footer-offices-item {
@@ -100,20 +132,108 @@
 }
 
 .footer-offices-item:not(:last-of-type) {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 .footer-offices-icon {
-    color: var(--main-black);
-    width: 22px;
-    stroke-width: 2;
+    stroke: #000a;
+    width: 16.8px;
+    stroke-width: 3;
     margin-right: 10px;
 }
 
 .footer-offices-text {
-    font-size: 14px;
+    color: #000a;
+    font-size: 13px;
 }
 
-.footer-offices-rights {
+.footer-offices-text strong {
+    font-weight: 600;
+}
+
+.footer-bottom-rights {
     font-size: 13px;
+}
+
+.footer-bottom-rights strong {
+    font-weight: 600;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-text {
+    font-size: 12.5px;
+    font-weight: 500;
+    color: #000b;
+    margin-right: 12px;
+}
+
+.footer-social-icons {
+    height: fit-content;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    transition: transform .2s ease-in-out;
+}
+
+.footer-social-icon {
+    stroke: var(--main-black);
+    stroke-width: 2.3;
+    height: 24px;
+    transition: stroke .2s ease-in-out;
+}
+
+.footer-social-link:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.footer-social-link:hover {
+    transform: scale(1.12);
+}
+
+.footer-social-link:hover>.footer-social-icon {
+    stroke: var(--main-blue);
+}
+
+.footer-social-link:active {
+    transform: scale(.95);
+}
+
+.footer-social-link:active>.footer-social-icon {
+    stroke: #2453ca;
+}
+
+.footer-offices-ubication:hover {
+    color: #000e
+}
+
+.footer-offices-ad {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: var(--main-purple);
+    padding: 4px 7px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.footer-offices-ubication {
+    font-size: 12px;
+    font-weight: 400;
+    transition: color .2s ease-in-out;
 }

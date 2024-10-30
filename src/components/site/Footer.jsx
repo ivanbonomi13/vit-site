@@ -67,61 +67,113 @@ const sections = [
     }
 ]
 
-const offices = ['Buenos Aires - Argentina', 'Santiago -  Chile']
+const offices = [
+    <>
+        <strong>Buenos Aires</strong> - Argentina
+    </>,
+    <>
+        <strong>Santiago</strong> - Chile
+    </>
+]
+
+const socialItems = [
+    {
+        'link': 'https://www.instagram.com/virtualitsrl/',
+        'icon': getIcons('header', 'social', 'instagram')
+    },
+    {
+        'link': 'https://www.linkedin.com/company/virtual-it-srl/',
+        'icon': getIcons('header', 'social', 'linkedin')
+    },
+    {
+        'link': 'https://www.facebook.com/people/VIT/61551742214173/',
+        'icon': getIcons('header', 'social', 'facebook')
+    },
+];
+
 
 export const Footer = () => {
     return (
         <footer className='footer section'>
             <div className='footer__container footer-container section-container'>
-                <div className='footer__container__banner footer-banner'>
-                    <img className='footer__container__banner__logo footer-banner-logo'
-                        src="../../public/images/logo/horizontal-logo.webp" alt="Logo de VIT" />
-                    <span className='footer__container__banner__callout footer-banner-callout'>
-                        Servicios de calidad.<br />
-                        Soluciones modernas.
-                    </span>
-                </div>
-                <div className='footer__container__grid footer-grid'>
-                    {
-                        sections.map((section, index) =>
-                            <div className='footer__container__grid__section footer-section' key={index}>
-                                <h4 className='footer__container__grid__section__title footer-section-title'>
-                                    {section.title}
-                                </h4>
-                                <ul className='footer__container__grid__section__content footer-section-content'>
-                                    {section.content.map((item, index) =>
-                                        <li className='footer__container__grid__section__content__item footer-section-item' key={index}>
-                                            <a className='footer__container__grid__section__content__item__link footer-section-link' href={`#${item.id}`}>
-                                                {item.name}
-                                            </a>
-                                        </li>
-                                    )}
-                                </ul>
-                            </div>
-                        )
-                    }
-                </div>
-                <div className='footer__container__offices footer-offices'>
-                    <h4 className='footer__container__offices__title footer-offices-title'>
-                        Oficinas Comerciales
-                    </h4>
-                    <ul className='footer__container__offices__list footer-offices-list'>
+                <div className='footer__container__top footer-top'>
+
+                    <div className='footer__container__top__banner footer-banner'>
+                        <a className='footer__container__top__banner__link footer-banner-link' href="">
+                            <img className='footer__container__top__banner__link__logo footer-banner-logo'
+                                src="../../public/images/logo/horizontal-logo.webp" alt="Logo de VIT" />
+                        </a>
+                        <span className='footer__container__top__banner__callout footer-banner-callout'>
+                            Somos una empresa de <strong>servicios de IT</strong> enfocada en ser el mejor aliado de tu negocio: una garantía de <strong>calidad, seguridad y modernidad</strong>.
+                        </span>
+                    </div>
+                    <div className='footer__container__top__grid footer-grid'>
                         {
-                            offices.map((office, index) =>
-                                <li key={index} className='footer__container__offices__list__item footer-offices-item'>
-                                    <Icon className={'footer__container__offices__list__item__icon footer-offices-icon'}>
-                                        {getIcons('footer', undefined, 'ubication')}
-                                    </Icon>
-                                    <span className='footer__container__offices__list__item__text  footer-offices-text'>
-                                        {office}
-                                    </span>
-                                </li>
+                            sections.map((section, index) =>
+                                <div className='footer__container__top__grid__section footer-section' key={index}>
+                                    <h4 className='footer__container__top__grid__section__title footer-section-title'>
+                                        {section.title}
+                                    </h4>
+                                    <ul className='footer__container__top__grid__section__content footer-section-content'>
+                                        {section.content.map((item, index) =>
+                                            <li className='footer__container__top__grid__section__content__item footer-section-item' key={index}>
+                                                <a className='footer__container__top__grid__section__content__item__link footer-section-link' href={`#${item.id}`}>
+                                                    {item.name}
+                                                </a>
+                                            </li>
+                                        )}
+                                    </ul>
+                                </div>
                             )
                         }
-                    </ul>
-                    <span className='footer__container__offices__rights footer-offices-rights'>
-                        Virtual IT 2023 ©. Todos los derechos reservados.
+                    </div>
+                    <div className='footer__container__top__offices footer-offices'>
+                        <h4 className='footer__container__top__offices__title footer-offices-title'>
+                            Oficinas Comerciales
+                        </h4>
+                        <ul className='footer__container__top__offices__list footer-offices-list'>
+                            {
+                                offices.map((office, index) =>
+                                    <li key={index} className='footer__container__top__offices__list__item footer-offices-item'>
+                                        <Icon className={'footer__container__top__offices__list__item__icon footer-offices-icon'}>
+                                            {getIcons('footer', undefined, 'ubication')}
+                                        </Icon>
+                                        <span className='footer__container__top__offices__list__item__text  footer-offices-text'>
+                                            {office}
+                                        </span>
+                                    </li>
+                                )
+                            }
+                        </ul>
+                        <div className='footer__container__top__offices__zone footer-offices-zone'>
+                            <span className='footer__container__top__offices__zone__ad footer-offices-ad'>
+                                PRINCIPAL
+                            </span>
+                            <a href='https://maps.app.goo.gl/MADvtHiQJ3tZEMAy7' target='_blank' className='footer__container__top__offices__zone__ubication footer-offices-ubication'>
+                                Cap. Joaquín Madariaga 718
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className='footer__container__bottom footer-bottom'>
+                    <span className='footer__container__bottom__rights footer-bottom-rights'>
+                        <strong>Virtual IT</strong> 2024 ©. Todos los derechos reservados.
                     </span>
+                    <div className='footer__container__bottom__social footer-social'>
+                        <span className='footer__container__bottom__social__text footer-social-text'>
+                            Conocé más sobre nosotros en
+                        </span>
+                        <div className='footer__container__bottom__social__icons footer-social-icons'>
+                            {socialItems.map((item, index) => (
+                                <a key={index} className='footer__container__bottom__social__link footer-social-link'
+                                    target="_blank" rel="noopener noreferrer" href={item.link}>
+                                    <Icon className={'footer__container__bottom__social__link__text footer-social-icon'}>
+                                        {item.icon}
+                                    </Icon>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>

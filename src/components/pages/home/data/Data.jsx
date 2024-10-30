@@ -6,8 +6,31 @@ import { DataPad } from './DataPad'
 
 const data = [
     {
+        'title': 'Usuarios',
+        'icon': getIcons('data', undefined, 'users'),
+        'amount': 800
+    },
+    {
         'title': 'Proyectos',
         'amount': 13
+    },
+    {
+        'title': 'Ambientes',
+        'icon': getIcons('data', undefined, 'environments'),
+        'types': [
+            {
+                'title': 'Ops',
+                'amount': 27
+            },
+            {
+                'title': 'Test',
+                'amount': 27
+            },
+            {
+                'title': 'QA',
+                'amount': 10
+            }
+        ]
     },
     {
         'title': 'Servidores',
@@ -41,29 +64,6 @@ const data = [
         'title': 'Microservicios',
         'amount': 3
     },
-    {
-        'title': 'Ambientes',
-        'icon': getIcons('data', undefined, 'environments'),
-        'types': [
-            {
-                'title': 'Ops',
-                'amount': 27
-            },
-            {
-                'title': 'Test',
-                'amount': 27
-            },
-            {
-                'title': 'QA',
-                'amount': 10
-            }
-        ]
-    },
-    {
-        'title': 'Usuarios',
-        'icon': getIcons('data', undefined, 'users'),
-        'amount': 800
-    }
 ]
 
 export const Data = () => {

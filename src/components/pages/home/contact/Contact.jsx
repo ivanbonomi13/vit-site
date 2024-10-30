@@ -112,7 +112,7 @@ export const Contact = () => {
     const checkFormProgress = () => data.filter(item => !item.validity).length
 
     return (
-        <Section title={'Conctacto'} id={'contact'} className={'contact'} extraClasses={checkFormProgress() === 0 && ' completed-form'}>
+        <Section title={'Contacto'} id={'contact'} className={'contact'} extraClasses={checkFormProgress() === 0 && ' completed-form'}>
             <div className='contact__container__content__pad contact-pad'>
                 <ContactFill content={content} selected={selected} data={data} handleFillClick={handleFillClick} />
                 <form className='contact__container__content__pad__form contact-pad-form'>
