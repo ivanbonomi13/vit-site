@@ -252,9 +252,9 @@
 .contact-pad-fill-cursor {
     position: absolute;
     width: 30px;
-    stroke: rgba(255, 255, 255, 0.10);
+    stroke: rgba(255, 255, 255, .2);
     stroke-width: 1;
-    fill: rgba(255, 255, 255, 0.05);
+    fill: #b143ff;
     left: 50%;
     top: 0;
     filter: drop-shadow(0 0 8px #000b);

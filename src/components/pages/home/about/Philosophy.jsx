@@ -9,25 +9,25 @@ const topics = [
         'name': 'Misión',
         'text':
             <>
-                Brindar <strong>soluciones tecnológicas modernas</strong> y de alta calidad que impulsen la <strong>eficiencia y seguridad</strong> de tu empresa. No nos limitamos a resolver problemas, nos aseguramos de proporcionarte un estrecho <strong>servicio colaborativo</strong>.
+                Brindar <strong>soluciones tecnológicas modernas</strong><Icon className={'philosophy-pad-text-icon'}>{getIcons('philosophy', 'text', 'solutions')}</Icon> que impulsen la <strong>eficiencia y seguridad</strong><Icon className={'philosophy-pad-text-icon'}>{getIcons('philosophy', 'text', 'safety')}</Icon> de tu empresa. No nos limitamos a resolver problemas, nos aseguramos de proporcionarte un estrecho <strong>servicio colaborativo</strong><Icon className={'philosophy-pad-text-icon'}>{getIcons('philosophy', 'text', 'colab')}</Icon>.
             </>,
-        'icon': getIcons('philosophy', undefined, 'mission')
+        'icon': getIcons('philosophy', 'head', 'mission')
     },
     {
         'name': 'Visión',
         'text':
             <>
-                Nos proyectamos como el mayor <strong>socio estratégico</strong> en la transformación de nuestros clientes. Visualizarnos como <strong>líderes</strong> en el mercado de servicios tecnológicos nos impulsa a <strong>mejorar continuamente</strong> con nuestras nuevas soluciones.
+                Nos proyectamos como el mayor <strong>socio estratégico</strong><Icon className={'philosophy-pad-text-icon'}>{getIcons('philosophy', 'text', 'strategy')}</Icon> en la transformación de nuestros clientes. Vernos como <strong>líderes</strong><Icon className={'philosophy-pad-text-icon'}>{getIcons('philosophy', 'text', 'leaders')}</Icon> en el mercado nos impulsa a <strong>mejorar continuamente</strong><Icon className={'philosophy-pad-text-icon'}>{getIcons('philosophy', 'text', 'kaizen')}</Icon> con nuestras nuevas soluciones.
             </>,
-        'icon': getIcons('philosophy', undefined, 'vision')
+        'icon': getIcons('philosophy', 'head', 'vision')
     },
     {
         'name': 'Propuesta de Valor',
         'text':
             <>
-                Hacer de tu éxito nuestro objetivo. Nos integramos a tu proceso de trabajo para <strong>pulirlo y escalarlo</strong>. Se nos destaca por tratar las inquietudes de nuestros clientes <strong>velozmente</strong>, priorizando el compromiso adquirido con tu negocio.
+                Hacer de tu éxito nuestro objetivo. Nos integramos a tu proceso de trabajo para <strong>pulirlo y escalarlo</strong><Icon className={'philosophy-pad-text-icon'}>{getIcons('philosophy', 'text', 'upgrade')}</Icon>. Se nos destaca por tratar las inquietudes de nuestros clientes <strong>velozmente</strong><Icon className={'philosophy-pad-text-icon'}>{getIcons('philosophy', 'text', 'fast')}</Icon>, siempre priorizando el compromiso con tu negocio.
             </>,
-        'icon': getIcons('philosophy', undefined, 'value-proposal')
+        'icon': getIcons('philosophy', 'head', 'value-proposal')
     }
 ]
 
