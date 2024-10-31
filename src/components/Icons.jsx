@@ -583,6 +583,39 @@ const icons = [
         ]
     },
     {
+        'section': 'services',
+        'list': [
+            {
+                'name': 'outsourcing',
+                'icon':
+                    <>
+                        <path d="M15 4.55a8 8 0 0 0 -6 14.9m0 -4.45v5h-5" />
+                        <path d="M18.37 7.16l0 .01" />
+                        <path d="M13 19.94l0 .01" />
+                        <path d="M16.84 18.37l0 .01" />
+                        <path d="M19.37 15.1l0 .01" />
+                        <path d="M19.94 11l0 .01" />
+                    </>
+            },
+            {
+                'name': 'development',
+                'icon':
+                    <>
+                        <path d="M7 8l-4 4l4 4" />
+                        <path d="M17 8l4 4l-4 4" />
+                        <path d="M14 4l-4 16" />
+                    </>
+            },
+            {
+                'name': 'devops',
+                'icon':
+                    <>
+                        <path d="M9.828 9.172a4 4 0 1 0 0 5.656a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+                    </>
+            }
+        ]
+    },
+    {
         'section': 'footer',
         'list': [
             {

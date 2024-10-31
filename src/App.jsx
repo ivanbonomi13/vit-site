@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Header } from './components/site/Header'
 import { Footer } from './components/site/Footer'
 import { LandingPage } from './components/pages/home/LandingPage'
+import { Services } from './components/pages/services/Services'
 
 export const App = () => {
     return (
@@ -20,9 +21,7 @@ export const App = () => {
             <Header />
             <Routes>
                 <Route path="/" element={<LandingPage />} />
-                {/* <Route path="/data" element={<></>} />
-                <Route path="/about" element={<></>} />
-                <Route path="/contact" element={<></>} /> */}
+                <Route path="/servicios" element={<Services/>} />
             </Routes>
             <Footer />
         </Router>
