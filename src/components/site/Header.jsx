@@ -58,7 +58,7 @@ export const Header = () => {
             <div className='header__container header-container section-container'>
                 <div className='header__container__brand header-brand'>
                     <Link className='header__container__brand__link header-logo-link' to='/'>
-                        <img className='header__container__link__logo header-logo' src='../../../public/images/logo/horizontal-logo.webp' alt='Logo de VIT' />
+                        <img className='header__container__link__logo header-logo' src='/images/logo/horizontal-logo.webp' alt='Logo de VIT' />
                     </Link>
                 </div>
                 <nav className='header__container__nav header-nav'>
