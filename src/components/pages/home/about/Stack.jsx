@@ -46,7 +46,7 @@ export const Stack = () => {
                                     {
                                         section.tools.map((tool, index) =>
                                             <img className='about__container__stack__board__section__carousel__group__logo about-stack-section-carousel-logo'
-                                                key={index} src={`/images/stack/${tool}.webp`} alt={`Logo de ${tool}`} />
+                                                key={index} src={`images/stack/${tool}.webp`} alt={`Logo de ${tool}`} />
                                         )
                                     }
                                 </div>
