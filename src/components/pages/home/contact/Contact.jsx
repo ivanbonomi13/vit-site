@@ -156,7 +156,7 @@ export const Contact = () => {
                         </span>
                         <button className={`contact__container__content__pad__form__box__submit${checkFormProgress() > 0 ? ' contact-form-submit-hidden' : ''} contact-pad-form-box-submit`} type="submit">
                             <img className='contact__container__content__pad__form__box__submit__icon contact-pad-form-box-submit-icon'
-                                src="../../public/images/logo/logo-simple-icon.webp" alt="Logo Simple de VIT" />
+                                src="/images/logo/logo-simple-icon.webp" alt="Logo Simple de VIT" />
                             <span className='contact__container__content__pad__form__box__submit__text contact-pad-form-box-submit-text'>
                                 VITearme
                             </span>

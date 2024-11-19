@@ -42,7 +42,7 @@ export const Clients = () => {
             <div className='about__container__content__clients__locations clients-location'>
                 <video className='about__container__content__clients__locations__video clients-location-video'
                     autoPlay loop muted>
-                    <source src='../../public/videos/vit-clients.mp4' type='video/mp4' />
+                    <source src='/videos/vit-clients.mp4' type='video/mp4' />
                 </video>
                 <span className='about__container__content__client__locations__callout clients-location-callout not-selectable'>
                     De <strong>VIT</strong><br />para el <strong>Mundo</strong>
@@ -54,7 +54,7 @@ export const Clients = () => {
                         <li key={index} className='about__container__content__clients__list__item clients-list-item'>
                             <a target='_blank' className='about__container__content__clients__list__item__link clients-list-link' href={client.url}>
                                 <img className='about__container__content__clients__list__item__logo clients-list-item-logo'
-                                    src={`../../public/images/clients/${client.name}-logo.webp`} alt={`Logo de ${client.name.toUpperCase()}`} />
+                                    src={`/images/clients/${client.name}-logo.webp`} alt={`Logo de ${client.name.toUpperCase()}`} />
                             </a>
                         </li>
                     )

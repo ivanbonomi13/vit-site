@@ -115,9 +115,9 @@ export const Team = () => {
                 </div>
                 <div className='about__container__content__team__box__banner about-team-banner'>
                     <img className='about__container__content__team__box__banner__photo team-banner-photo'
-                        src="../../public/images/photos/vit-team-photo.webp" alt="Foto del Equipo de VIT" />
+                        src="/images/photos/vit-team-photo.webp" alt="Foto del Equipo de VIT" />
                     <img className='about__container__content__team__box__banner__photo team-banner-photo'
-                        src="../../public/images/photos/vit-meet-photo.webp" alt="Foto de una Reunión del Equipo de VIT" />
+                        src="/images/photos/vit-meet-photo.webp" alt="Foto de una Reunión del Equipo de VIT" />
                 </div>
             </div>
         </div>

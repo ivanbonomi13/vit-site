@@ -101,7 +101,7 @@ export const Footer = () => {
                     <div className='footer__container__top__banner footer-banner'>
                         <a className='footer__container__top__banner__link footer-banner-link' href="">
                             <img className='footer__container__top__banner__link__logo footer-banner-logo'
-                                src="../../public/images/logo/horizontal-logo.webp" alt="Logo de VIT" />
+                                src="/images/logo/horizontal-logo.webp" alt="Logo de VIT" />
                         </a>
                         <span className='footer__container__top__banner__callout footer-banner-callout'>
                             Somos una empresa de <strong>servicios de IT</strong> enfocada en ser el mejor aliado de tu negocio: una garantía de <strong>calidad, seguridad y modernidad</strong>.

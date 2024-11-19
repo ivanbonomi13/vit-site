@@ -43,7 +43,7 @@ export const Hero = () => {
                     </span>
                     <a className='hero__container__content__cta hero-cta' href='#' onMouseOut={() => setMouseOver(false)} onMouseOver={() => setMouseOver(true)}>
                         <img className='hero__container__content__cta__logo hero-cta-logo'
-                            src="../../public/images/logo/logo-icon.webp" alt="Ícono del Logo de VIT" />
+                            src="/images/logo/logo-icon.webp" alt="Ícono del Logo de VIT" />
                         <span className='hero__container__content__cta__text hero-cta-text'>
                             ¡VITeate!
                         </span>
