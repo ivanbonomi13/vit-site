@@ -1,3 +1,4 @@
+/* Estilos generales */
 .about-stack {
     margin-top: 48px;
     margin-bottom: 130px;
@@ -34,8 +35,7 @@
 
     width: 50%;
     overflow-x: hidden;
-    transition:
-        transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 .about-stack-section:hover {
@@ -49,7 +49,6 @@
 .about-stack-section:hover .about-stack-section-carousel-logo {
     filter: contrast(0) brightness(1.8) drop-shadow(0 0 20px #0004);
 }
-
 
 .about-stack-section:active {
     transform: scale(.97);
@@ -79,17 +78,14 @@
 
     width: 0;
     filter: drop-shadow(0 0 20px #000a);
-    transition:
-        width .2s ease-in-out;
+    transition: width .2s ease-in-out;
 }
 
 .about-stack-section-head-title {
     color: #fff;
     font-size: 32px;
     text-shadow: 0 0 20px #0003;
-
-    transition:
-        margin-left .2s ease-in-out;
+    transition: margin-left .2s ease-in-out;
 }
 
 .about-stack-section-carousel {
@@ -99,15 +95,13 @@
 .about-stack-section-carousel-group {
     display: flex;
     align-items: center;
-    animation:
-        logo-carousel 8s linear infinite;
+    animation: logo-carousel 8s linear infinite;
 }
 
 .about-stack-section-carousel-logo {
     margin-right: 75px;
     filter: contrast(0) brightness(1.48) drop-shadow(0 0 10px #0003);
-    transition:
-        filter .2s ease-in-out;
+    transition: filter .2s ease-in-out;
 }
 
 .about-stack-section-carousel-logo:first-of-type {
@@ -134,8 +128,59 @@
     0% {
         transform: translateX(0);
     }
-
+    
     100% {
         transform: translateX(-100%);
     }
+}
+
+
+@media screen and (max-width: 768px) {
+    .about-stack {
+        margin-top: 24px;
+        margin-bottom: 60px;
+    }
+
+    .about-stack-board {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-stack-section {
+        width: 90%; 
+        margin: 10px 0; 
+        padding: 24px; 
+    }
+
+    .about-stack-section-head-title {
+        font-size: 24px; 
+        text-align: center;
+    }
+
+    .about-stack-section-carousel-logo {
+        margin-right: 30px; 
+        height: auto; 
+    }
+
+    .about-stack-section:hover .about-stack-section-head-icon {
+        width: 32px; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .about-stack-section {
+        width: 100%;
+        padding: 16px; 
+    }
+
+    .about-stack-section-head-title {
+        font-size: 20px; 
+    }
+
+    .about-stack-section-carousel-logo {
+        margin-right: 20px; 
+    }
+
+    
 }
