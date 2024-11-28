@@ -431,3 +431,69 @@
     border-radius: var(--border-radius) !important;
     background: #1d419b !important;
 }
+
+@media(max-width: 768px){
+    .contact-pad-fill-data:not(:last-of-type) {
+        margin-right: 50px;
+    }
+    .contact-pad-fill::before{
+        width: 380px;
+    }
+    .contact-pad-fill-cursor {
+        left: 70%;
+    }
+
+    .email-fill-selected .contact-pad-fill-cursor {
+        transform: translate(calc(-50% - 170px), -120%);
+    }
+    
+    .phone-fill-selected .contact-pad-fill-cursor {
+        transform: translate(calc(-50% - 80px), -120%);
+    }
+    
+    .services-fill-selected .contact-pad-fill-cursor {
+        transform: translate(calc(-50% + 10px), -120%);
+    }
+    
+    .message-fill-selected .contact-pad-fill-cursor {
+        transform: translate(calc(-50% + 100px), -120%);
+    }
+
+    .contact-pad-box{
+        transform: translateY(50%) translateX(-7%);
+        width: 120%;
+    }
+}
+
+@media(max-width: 480px){
+    .contact-pad-fill-data:not(:last-of-type) {
+        margin-right: 50px;
+    }
+    .contact-pad-fill::before{
+        width: 380px;
+    }
+    .contact-pad-fill-cursor {
+        left: 70%;
+    }
+
+    .email-fill-selected .contact-pad-fill-cursor {
+        transform: translate(calc(-50% - 170px), -120%);
+    }
+    
+    .phone-fill-selected .contact-pad-fill-cursor {
+        transform: translate(calc(-50% - 80px), -120%);
+    }
+    
+    .services-fill-selected .contact-pad-fill-cursor {
+        transform: translate(calc(-50% + 10px), -120%);
+    }
+    
+    .message-fill-selected .contact-pad-fill-cursor {
+        transform: translate(calc(-50% + 100px), -120%);
+    }
+
+    .contact-pad-box{
+        transform: translateY(50%) translateX(-7%);
+        width: 120%;
+    }
+}

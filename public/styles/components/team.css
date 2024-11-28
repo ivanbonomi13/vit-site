@@ -131,3 +131,107 @@
     transform:
         rotate3d(-.1, .2, .03, 30deg) scale(.95) translateX(47px);
 }
+
+/* Ajustes generales */
+@media (max-width: 1024px) {
+    .about-team {
+        margin-top: 100px;
+    }
+
+    .about-team-box {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .about-team-staff {
+        flex: 1;
+        margin-bottom: 40px;
+    }
+
+    .team-section-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .team-section-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .team-member-name {
+        font-size: 16px;
+    }
+
+    .team-member-role {
+        font-size: 12px;
+    }
+
+    .team-banner-photo {
+        width: 90%;
+        transform: rotate3d(-.1, .2, .03, 30deg) translateX(0);
+        margin: 0 auto;
+        transition: transform .3s ease;
+    }
+
+    .team-banner-photo:hover {
+        transform: rotate3d(-.1, .2, .03, 20deg) translateX(0);
+    }
+
+    .team-banner-photo:active {
+        transform: rotate3d(-.1, .2, .03, 20deg) scale(0.95) translateX(0);
+    }
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    .about-team {
+        margin-top: 80px;
+    }
+
+    .about-team-box {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .about-team-staff {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+
+    .team-section-title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .team-section-list {
+        grid-template-columns: 1fr; /* Solo una columna en pantallas pequeñas */
+        gap: 15px;
+    }
+
+    .team-member-name {
+        font-size: 14px;
+    }
+
+    .team-member-role {
+        font-size: 12px;
+    }
+
+    .team-banner-photo {
+        width: 100%;
+        transform: rotate3d(-.1, .2, .03, 15deg) translateX(0);
+        margin: 0 auto;
+        transition: transform .3s ease;
+    }
+
+    .team-banner-photo:first-of-type {
+        margin-bottom: 20px;
+    }
+
+    .team-banner-photo:hover {
+        transform: rotate3d(-.1, .2, .03, 10deg) translateX(0);
+    }
+
+    .team-banner-photo:active {
+        transform: rotate3d(-.1, .2, .03, 10deg) scale(0.95) translateX(0);
+    }
+}

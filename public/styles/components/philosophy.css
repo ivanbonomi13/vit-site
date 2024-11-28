@@ -27,25 +27,21 @@
 
 .philosophy-board:before {
     content: '';
-
     position: absolute;
     height: 8px;
     top: -76px;
     left: 50%;
-
     width: 100vw;
     background-color: rgba(255, 255, 255, 0.038);
     border: 1px solid rgba(255, 255, 255, 0.05);
-
-    transform:
-        translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     z-index: -18;
 }
 
 .philosophy-pad {
     position: relative;
-    flex: 1;
-
+    flex: 1 1 320px;  /* Se establece el ancho fijo de las tarjetas */
+    max-width: 340px; /* Asegura que las tarjetas no se estiren más allá de este tamaño */
     padding: 30px;
     border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: var(--border-radius);
@@ -54,6 +50,7 @@
     backdrop-filter: blur(10px);
 
     box-shadow: 0 2px 10px #00000026;
+    word-wrap: break-word; /* Permite que el texto se ajuste dentro de la tarjeta */
 }
 
 .philosophy-pad:not(:last-of-type) {
@@ -93,7 +90,6 @@
     position: absolute;
     left: 50%;
     top: -110px;
-
     width: fit-content;
     background-color: #2a4281;
     border-radius: 50%;
@@ -103,8 +99,7 @@
     align-items: center;
     justify-content: center;
 
-    transform:
-        translateX(-50%);
+    transform: translateX(-50%);
     z-index: 28;
     box-shadow: 0 2px 10px #00000032;
 }
@@ -125,7 +120,6 @@
     text-align: center;
     font-weight: 700;
     font-size: 26px;
-    
     color: #fff;
     margin-bottom: 22px;
     text-shadow: 0 0 8px #fff2;
@@ -134,17 +128,15 @@
 .philosophy-pad-text {
     position: relative;
     color: #ededed;
-
     line-height: 1.5;
     font-weight: 300;
     font-size: 15px;
     text-wrap: balance;
-
     text-shadow: 0 0 15px #0005;
 }
 
 .philosophy-pad-text strong {
-    font-weight:600;
+    font-weight: 600;
     transition: margin-right .2s ease, color .2s ease;
 }
 
@@ -157,4 +149,77 @@
     position: absolute;
     transform: translateX(-20px);
     transition: opacity .2s ease, stroke .2s ease;
+}
+
+@media (max-width: 768px) {
+.philosophy-board:before{
+    display: none;
+}
+
+    .philosophy-board {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;  /* Ajuste del margen superior */
+    }
+
+    .philosophy-pad {
+        flex: 1 1 280px; /* Ancho reducido para pantallas pequeñas */
+        max-width: 280px;
+        padding: 20px;  /* Reducir padding */
+        margin-right: 0;
+        margin-top: 40px;
+        margin-bottom: 30px;  /* Espaciado entre las tarjetas */
+    }
+
+    .philosophy-pad:not(:last-of-type) {
+        margin-right: 0;  /* Eliminar margen derecho */
+    }
+
+    .philosophy-pad-title {
+        font-size: 22px;  /* Ajustar tamaño del título */
+    }
+
+    .philosophy-pad-text {
+        font-size: 14px;  /* Ajustar tamaño de fuente del texto */
+    }
+
+    .philosophy-pad-box {
+        top: -65px;  /* Ajustar posición del icono */
+    }
+
+    .philosophy-pad-icon {
+        width: 50px;  /* Reducir tamaño de icono */
+        padding: 8px;
+    }
+
+    .philosophy-pad-text-icon {
+        width: 15px;  /* Reducir tamaño de icono */
+    }
+}
+
+/* Media Query para Pantallas Extra Pequeñas (Móviles pequeños) */
+@media (max-width: 480px) {
+    .philosophy-pad {
+        flex: 1 1 250px;  /* Ancho aún más reducido */
+        max-width: 250px;
+        padding: 15px;  /* Reducir padding aún más */
+    }
+
+    .philosophy-pad-title {
+        font-size: 20px;  /* Reducir tamaño del título */
+    }
+
+    .philosophy-pad-text {
+        font-size: 13px;  /* Reducir tamaño de texto */
+    }
+
+    .philosophy-pad-icon {
+        width: 40px;  /* Reducir tamaño de icono */
+        padding: 6px;
+    }
+
+    .philosophy-pad-text-icon {
+        width: 14px;  /* Reducir tamaño de icono */
+    }
 }
