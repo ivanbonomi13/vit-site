@@ -126,6 +126,8 @@
     background-color: #1b42a3;
 }
 
+/* Redes Sociales */
+
 .header-social {
     display: flex;
     align-items: center;
@@ -169,8 +171,47 @@
 }
 
 /* MEDIA QUERIES */
+@media (min-width: 769px) {
+    .header__menu-toggle {
+        display: none;
+    }
+
+    .header__container__nav {
+        display: flex;
+        position: static;
+        background: none;
+        box-shadow: none;
+    }
+}
 
 @media (max-width: 768px) {
+    .header__container__nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 10;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header__container__nav.open {
+        display: flex;
+        width: fit-content;
+        left: 50%; 
+        transform: translateX(-50%); 
+    }
+
+    .header__menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
     .header {
         padding: 15px 10px;
     }
@@ -185,6 +226,7 @@
     }
 
     .nav-list {
+        flex-direction: column; /* Menú desplegable en forma de columna */
         gap: 20px; /* Reducir el espacio entre elementos */
         justify-content: center; /* Centrar los enlaces */
     }

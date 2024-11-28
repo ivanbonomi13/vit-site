@@ -288,3 +288,9 @@
     background-color: #681fb6;
     opacity: 1 !important;
 }
+
+@media(max-width: 768px){
+    .hero-bg{
+        display: none;
+    }
+}

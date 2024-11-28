@@ -173,7 +173,7 @@
     .clients-location-video {
         transform:
         translateX(-15%) translateY(-20%)  rotate3d(2, 2.5, 1, 320deg) !important;
-        width: 400px;
+        width: 300px;
 
     }
 
