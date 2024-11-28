@@ -101,7 +101,7 @@
     top: 50%;
     left: 50%;
 
-    background-color: #183377;
+    background-color: #681fb6;
     border: none;
 
     transform: translate(-2px, 0);
@@ -128,7 +128,7 @@
     bottom: -83px;
 
     border: 10px solid;
-    border-color: #183377 !important;
+    border-color: #681fb6 !important;
     border-top: none;
     border-left: none;
 
@@ -230,7 +230,7 @@
     left: -120px;
 
     border: 30px solid;
-    border-color: #183377 !important;
+    border-color: #681fb6 !important;
     border-bottom: none;
     border-right: none;
 
@@ -285,6 +285,12 @@
 
     border: none;
     z-index: -2;
-    background-color: #183377;
+    background-color: #681fb6;
     opacity: 1 !important;
+}
+
+@media(max-width: 768px){
+    .hero-bg{
+        display: none;
+    }
 }

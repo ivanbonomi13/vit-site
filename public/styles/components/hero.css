@@ -201,3 +201,15 @@
 .hero-cta:hover>.hero-cta-text {
     margin-left: 42px;
 }
+
+@media (max-width: 768px){
+    .hero-top-ad{
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 480px){
+    .hero-top-ad{
+        margin-top: 130px;
+    }
+}

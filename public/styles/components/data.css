@@ -1,3 +1,4 @@
+/* Estilos generales */
 .data-content {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -13,8 +14,7 @@
     backdrop-filter: blur(10px);
 
     box-shadow: 0 2px 10px #00000026;
-    transition:
-        transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 .data-pad:hover {
@@ -25,6 +25,7 @@
     transform: scale(1);
 }
 
+/* Posicionamiento de los pads */
 .data-pad:first-of-type {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
@@ -55,76 +56,70 @@
     grid-row: 2 / 3;
 }
 
+/* DataPad Simple */
 .data-pad-simple {
     display: flex;
     align-items: center;
     justify-content: center;
-
     color: #fff;
 }
 
 .data-pad-simple-amount {
     font-weight: 700;
-    font-size: 60px;
-    text-align: center;
+    font-size: 2.5vw; /* Ajuste dinámico al ancho de la ventana */
     letter-spacing: 0;
-
+    text-align: center;
     color: #fff;
     text-shadow: 0 0 16px #0005;
-
     margin-right: 22px;
     transform: translateX(6px);
 }
 
 .data-pad-simple-title {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 2.5vw; /* Ajuste dinámico */
     text-shadow: 0 0 20px #0009;
 }
 
+/* Cabecera de DataPad */
 .data-pad-head {
     display: flex;
     align-items: center;
     justify-content: center;
-
     margin-bottom: 35px;
 }
 
 .data-pad-head-icon {
-    stroke: #fff;
-    stroke-width: 2;
-
-    width: 44px;
+    width: 3vw;
+    min-width: 20px; /* Tamaño mínimo para los iconos */
     margin-right: 10px;
-
     filter: drop-shadow(0 0 10px #0006);
 }
 
 .data-pad-head-title {
-    font-size: 26px;
+    font-size: 2vw; /* Ajuste dinámico del título */
     font-weight: 600;
-
     color: #fff;
     text-shadow: 0 0 20px #000a;
 }
 
+/* Cantidad principal de DataPad */
 .data-pad-amount {
     display: block;
-
     letter-spacing: 5px;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 4vw; /* Ajuste dinámico al ancho de la ventana */
     text-align: center;
-
     color: #fff;
     transform: translateX(5px);
     text-shadow: 0 0 20px #0006;
 }
 
 .data-pad:first-of-type>.data-pad-amount {
-    font-size: 90px;
+    font-size: 6vw; /* Ajuste especial para el primer DataPad */
 }
 
+/* Estilos de la lista dentro del DataPad */
 .data-pad-list {
     display: flex;
     align-items: center;
@@ -134,201 +129,41 @@
 .data-pad-list-item-title {
     text-align: center;
     font-weight: 600;
-    font-size: 20px;
-
+    font-size: 2vw; /* Ajuste dinámico */
     color: #fff;
     margin-bottom: 8px;
     text-shadow: 0 0 20px #0008;
 }
 
 .data-pad-list-item-amount {
-    font-size: 42px;
+    font-size: 4vw; /* Ajuste dinámico */
     font-weight: 700;
     text-align: center;
     text-shadow: 0 0 14px #0006;
     letter-spacing: 3px;
-
     color: #dfdfdf;
     display: block;
     transform: translateX(3px);
 }
 
+/* Transición para el tamaño de la cantidad */
 .data-pad-simple-amount {
-    transition:
-        all .1s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 1200px) {
-    .data-content {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 20px;
-    }
+@media (max-width: 480px){
 
-    .data-pad:first-of-type {
-        grid-column: 1 / 3;
-    }
-
-    .data-pad:nth-of-type(2) {
-        grid-column: 3 / 5;
-    }
-
-    .data-pad:nth-of-type(3) {
-        grid-column: 5 / 7;
-    }
-
-    .data-pad:nth-of-type(4) {
-        grid-column: 1 / 3;
-    }
-
-    .data-pad:nth-of-type(5) {
-        grid-column: 3 / 5;
-    }
-
-    .data-pad:last-of-type {
-        grid-column: 5 / 7;
-    }
-    .data-pad-simple-amount {
-        font-size: 6vh;
-    }
-
-    .data-pad-simple-title {
-        font-size: 3vh;
-    }
-
-    .data-pad-head-title {
-        font-size: 3vh;
-    }
-
-    .data-pad-list-item-title {
-        font-size: 2.4vh;
-    }
-
-    .data-pad-list-item-amount {
-        font-size: 4.5vh;
-    }
-    .data-pad:first-of-type>.data-pad-amount {
-        font-size: 8vh;
-    }
-    .data-pad-head-icon {
-        width: 6vh;
-    }
-    
-}
-
-@media screen and (max-width: 900px) {
-    .data-content {
-        grid-template-columns: repeat(9, 1fr);
-        gap: 15px;
-    }
-
-    .data-pad:first-of-type,
-    .data-pad:nth-of-type(2),
-    .data-pad:nth-of-type(3) {
-        grid-column: span 3;
-    }
-
-    .data-pad:nth-of-type(4),
-    .data-pad:nth-of-type(5),
-    .data-pad:last-of-type {
-        grid-column: span 3;
-    }
-    .data-pad-simple-amount {
-        font-size: 5vh;
-    }
-
-    .data-pad-simple-title {
-        font-size: 2.4vh;
-    }
-
-    .data-pad-head-title {
-        font-size: 2.4vh;
-    }
-
-    .data-pad-list-item-title {
-        font-size: 1.9vh;
-    }
-
-    .data-pad-list-item-amount {
-        font-size: 3.6vh;
-    }
-    .data-pad:first-of-type>.data-pad-amount {
-        font-size: 6.4vh;
-    }
-    .data-pad-head-icon {
-        width: 5vh;
-    }
-    
-}
-
-@media screen and (max-width: 600px) {
     .data-content {
         gap: 10px;
-    }
-
-    .data-pad {
-        padding: 10px;
-    }
-
-    .data-pad-simple-amount {
-        font-size: 3.5vh;
-    }
-
-    .data-pad-simple-title {
-        font-size: 1.7vh;
-    }
-
-    .data-pad-head-title {
-        font-size: 1.7vh;
-    }
-
-    .data-pad-list-item-title {
-        font-size: 1.4vh;
-    }
-
-    .data-pad-list-item-amount {
-        font-size: 2vh;
+        margin-top: 40px;
     }
     .data-pad:first-of-type>.data-pad-amount {
-        font-size: 5vh;
-    }
-    .data-pad-head-icon {
-        width: 3.5vh;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .data-content {
-        gap: 10px;
+        margin-left: -10px;
     }
 
-    .data-pad {
-        padding: 10px;
+    .data-pad-list-item-title{
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
-    .data-pad-simple-amount {
-        font-size: 3vh;
-    }
-
-    .data-pad-simple-title {
-        font-size: 1.5vh;
-    }
-
-    .data-pad-head-title {
-        font-size: 1.5vh;
-    }
-
-    .data-pad-list-item-title {
-        font-size: 1.2vh;
-    }
-
-    .data-pad-list-item-amount {
-        font-size: 1.8vh;
-    }
-    .data-pad:first-of-type>.data-pad-amount {
-        font-size: 4.5vh;
-    }
-    .data-pad-head-icon {
-        width: 3vh;
-    }
 }
