@@ -40,8 +40,8 @@
 
 .philosophy-pad {
     position: relative;
-    flex: 1 1 320px;  /* Se establece el ancho fijo de las tarjetas */
-    max-width: 340px; /* Asegura que las tarjetas no se estiren más allá de este tamaño */
+    flex: 1 1 320px;  
+    max-width: 340px; 
     padding: 30px;
     border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: var(--border-radius);
@@ -50,7 +50,7 @@
     backdrop-filter: blur(10px);
 
     box-shadow: 0 2px 10px #00000026;
-    word-wrap: break-word; /* Permite que el texto se ajuste dentro de la tarjeta */
+    word-wrap: break-word; 
 }
 
 .philosophy-pad:not(:last-of-type) {
@@ -160,66 +160,65 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 30px;  /* Ajuste del margen superior */
+        margin-top: 30px;  
     }
 
     .philosophy-pad {
-        flex: 1 1 280px; /* Ancho reducido para pantallas pequeñas */
+        flex: 1 1 280px; 
         max-width: 280px;
-        padding: 20px;  /* Reducir padding */
+        padding: 20px;  
         margin-right: 0;
         margin-top: 40px;
-        margin-bottom: 30px;  /* Espaciado entre las tarjetas */
+        margin-bottom: 30px;  
     }
 
     .philosophy-pad:not(:last-of-type) {
-        margin-right: 0;  /* Eliminar margen derecho */
+        margin-right: 0;  
     }
 
     .philosophy-pad-title {
-        font-size: 22px;  /* Ajustar tamaño del título */
+        font-size: 22px;  
     }
 
     .philosophy-pad-text {
-        font-size: 14px;  /* Ajustar tamaño de fuente del texto */
+        font-size: 14px;  
     }
 
     .philosophy-pad-box {
-        top: -65px;  /* Ajustar posición del icono */
+        top: -65px;  
     }
 
     .philosophy-pad-icon {
-        width: 50px;  /* Reducir tamaño de icono */
+        width: 50px;  
         padding: 8px;
     }
 
     .philosophy-pad-text-icon {
-        width: 15px;  /* Reducir tamaño de icono */
+        width: 15px;  
     }
 }
 
-/* Media Query para Pantallas Extra Pequeñas (Móviles pequeños) */
 @media (max-width: 480px) {
     .philosophy-pad {
-        flex: 1 1 250px;  /* Ancho aún más reducido */
+        flex: 1 1 250px;  
         max-width: 250px;
-        padding: 15px;  /* Reducir padding aún más */
+        padding: 15px;  
     }
 
     .philosophy-pad-title {
-        font-size: 20px;  /* Reducir tamaño del título */
+        font-size: 20px;  
     }
 
     .philosophy-pad-text {
-        font-size: 13px;  /* Reducir tamaño de texto */
+        font-size: 13px;  
     }
 
     .philosophy-pad-icon {
-        width: 40px;  /* Reducir tamaño de icono */
+        width: 40px;  
         padding: 6px;
     }
 
     .philosophy-pad-text-icon {
-        width: 14px;  /* Reducir tamaño de icono */
+        width: 14px;  
     }
 }

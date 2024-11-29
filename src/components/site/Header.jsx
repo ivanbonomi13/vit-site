@@ -61,14 +61,12 @@ export const Header = () => {
     return (
         <header className='header'>
             <div className='header__container header-container section-container'>
-                {/* Logo de la marca */}
                 <div className='header__container__brand header-brand'>
                     <Link className='header__container__brand__link header-logo-link' to='/'>
                         <img className='header__container__link__logo header-logo' src='/images/logo/horizontal-logo.webp' alt='Logo de VIT' />
                     </Link>
                 </div>
 
-                {/* Botón de menú hamburguesa */}
                 <button 
                     className={`header__menu-toggle ${isMenuOpen ? 'open' : ''}`} 
                     onClick={toggleMenu} 
@@ -77,7 +75,6 @@ export const Header = () => {
                     ☰
                 </button>
 
-                {/* Menú de navegación */}
                 <nav className={`header__container__nav header-nav ${isMenuOpen ? 'open' : ''}`}>
                     <ul className='header__container__nav__list nav-list not-selectable'>
                         {navItems.map((item, index) => (
@@ -97,7 +94,6 @@ export const Header = () => {
                     </ul>
                 </nav>
 
-                {/* Enlaces a redes sociales */}
                 <div className='header__container__social header-social'>
                     {socialItems.map((item, index) => (
                         <a key={index} className='header__container__social__link header-social-link'

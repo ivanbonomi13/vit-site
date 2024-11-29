@@ -132,7 +132,6 @@
         rotate3d(-.1, .2, .03, 30deg) scale(.95) translateX(47px);
 }
 
-/* Ajustes generales */
 @media (max-width: 1024px) {
     .about-team {
         margin-top: 100px;
@@ -182,7 +181,6 @@
     }
 }
 
-/* Ajustes para pantallas pequeñas (móviles) */
 @media (max-width: 600px) {
     .about-team {
         margin-top: 80px;
@@ -204,7 +202,7 @@
     }
 
     .team-section-list {
-        grid-template-columns: 1fr; /* Solo una columna en pantallas pequeñas */
+        grid-template-columns: 1fr; 
         gap: 15px;
     }
 

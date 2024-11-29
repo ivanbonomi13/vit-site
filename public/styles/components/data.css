@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 .data-content {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -25,7 +25,6 @@
     transform: scale(1);
 }
 
-/* Posicionamiento de los pads */
 .data-pad:first-of-type {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
@@ -56,7 +55,6 @@
     grid-row: 2 / 3;
 }
 
-/* DataPad Simple */
 .data-pad-simple {
     display: flex;
     align-items: center;
@@ -66,7 +64,7 @@
 
 .data-pad-simple-amount {
     font-weight: 700;
-    font-size: 2.5vw; /* Ajuste dinámico al ancho de la ventana */
+    font-size: 2.5vw; 
     letter-spacing: 0;
     text-align: center;
     color: #fff;
@@ -77,11 +75,10 @@
 
 .data-pad-simple-title {
     font-weight: 500;
-    font-size: 2.5vw; /* Ajuste dinámico */
+    font-size: 2.5vw; 
     text-shadow: 0 0 20px #0009;
 }
 
-/* Cabecera de DataPad */
 .data-pad-head {
     display: flex;
     align-items: center;
@@ -91,24 +88,24 @@
 
 .data-pad-head-icon {
     width: 3vw;
-    min-width: 20px; /* Tamaño mínimo para los iconos */
+    min-width: 20px; 
     margin-right: 10px;
     filter: drop-shadow(0 0 10px #0006);
 }
 
 .data-pad-head-title {
-    font-size: 2vw; /* Ajuste dinámico del título */
+    font-size: 2vw; 
     font-weight: 600;
     color: #fff;
     text-shadow: 0 0 20px #000a;
 }
 
-/* Cantidad principal de DataPad */
+
 .data-pad-amount {
     display: block;
     letter-spacing: 5px;
     font-weight: 700;
-    font-size: 4vw; /* Ajuste dinámico al ancho de la ventana */
+    font-size: 4vw; 
     text-align: center;
     color: #fff;
     transform: translateX(5px);
@@ -116,10 +113,9 @@
 }
 
 .data-pad:first-of-type>.data-pad-amount {
-    font-size: 6vw; /* Ajuste especial para el primer DataPad */
+    font-size: 6vw; 
 }
 
-/* Estilos de la lista dentro del DataPad */
 .data-pad-list {
     display: flex;
     align-items: center;
@@ -130,14 +126,14 @@
 .data-pad-list-item-title {
     text-align: center;
     font-weight: 600;
-    font-size: 2vw; /* Ajuste dinámico */
+    font-size: 2vw; 
     color: #fff;
     margin-bottom: 8px;
     text-shadow: 0 0 20px #0008;
 }
 
 .data-pad-list-item-amount {
-    font-size: 4vw; /* Ajuste dinámico */
+    font-size: 4vw; 
     font-weight: 700;
     text-align: center;
     text-shadow: 0 0 14px #0006;
@@ -147,7 +143,7 @@
     transform: translateX(3px);
 }
 
-/* Transición para el tamaño de la cantidad */
+
 .data-pad-simple-amount {
     transition: all .1s ease-in-out;
 }

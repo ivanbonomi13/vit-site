@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    flex-wrap: wrap; /* Para que los elementos se acomoden en dispositivos pequeños */
+    flex-wrap: wrap; 
 }
 
 /* LOGO */
@@ -47,7 +47,7 @@
     align-items: center;
     justify-content: start;
     gap: 30px;
-    flex-wrap: wrap; /* Para ajustar los elementos en dispositivos pequeños */
+    flex-wrap: wrap; 
 }
 
 .nav-link {
@@ -126,7 +126,6 @@
     background-color: #1b42a3;
 }
 
-/* Redes Sociales */
 
 .header-social {
     display: flex;
@@ -170,17 +169,9 @@
     transition: stroke .2s ease-in-out;
 }
 
-/* MEDIA QUERIES */
 @media (min-width: 769px) {
     .header__menu-toggle {
         display: none;
-    }
-
-    .header__container__nav {
-        display: flex;
-        position: static;
-        background: none;
-        box-shadow: none;
     }
 }
 
@@ -217,48 +208,48 @@
     }
 
     .header-container {
-        flex-direction: column; /* Alinear elementos en columna en pantallas pequeñas */
+        flex-direction: column; 
         align-items: center;
     }
 
     .header-logo {
-        width: 150px; /* Reducir tamaño del logo */
+        width: 150px; 
     }
 
     .nav-list {
-        flex-direction: column; /* Menú desplegable en forma de columna */
-        gap: 20px; /* Reducir el espacio entre elementos */
-        justify-content: center; /* Centrar los enlaces */
+        flex-direction: column; 
+        gap: 20px; 
+        justify-content: center; 
     }
 
     .contact-button>.nav-link {
-        padding: 12px 15px; /* Ajustar tamaño del botón */
+        padding: 12px 15px; 
     }
 
     .header-social {
-        position: static; /* Quitar posición absoluta para evitar superposición */
+        position: static; 
         margin-top: 10px;
     }
 }
 
 @media (max-width: 480px) {
     .header-logo {
-        width: 120px; /* Reducir aún más el tamaño del logo */
+        width: 120px; 
     }
 
     .nav-link-text {
-        font-size: 13px; /* Reducir tamaño del texto de los enlaces */
+        font-size: 13px; 
     }
 
     .contact-button>.nav-link {
-        padding: 10px 12px; /* Ajustar tamaño del botón */
+        padding: 10px 12px; 
     }
 
     .header-social-link {
-        margin-right: 10px; /* Reducir espacio entre iconos sociales */
+        margin-right: 10px; 
     }
 
     .header-social-icon {
-        width: 20px; /* Ajustar tamaño de los iconos sociales */
+        width: 20px; 
     }
 }
