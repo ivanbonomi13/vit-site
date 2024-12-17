@@ -2,10 +2,14 @@ import '../../../public/styles/components/footer.css'
 
 import { getIcons } from '../Icons'
 import { Icon } from '../Icon'
+import { useLocation, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+
 
 const sections = [
     {
         'title': 'Sobre VIT',
+        'baseURL': '/',
         'content': [
             {
                 'name': 'Stack',
@@ -27,6 +31,7 @@ const sections = [
     },
     {
         'title': 'Servicios',
+        'baseURL': '/servicios',
         'content': [
             {
                 'name': 'Outsourcing IT',
@@ -47,6 +52,7 @@ const sections = [
     },
     {
         'title': 'Blog',
+        'baseURL': '/blog',
         'content': [
             {
                 'name': 'Tecnologías',
@@ -93,11 +99,37 @@ const socialItems = [
 
 
 export const Footer = () => {
+    const location = useLocation(); // Obtiene la URL actual
+    const navigate = useNavigate(); // Función para redirigir
+
+    // Esta función se encarga de manejar la redirección y desplazamiento a la sección
+    const handleRedirect = (baseURL, sectionID) => {
+        // Si estamos en una página diferente
+        if (location.pathname !== baseURL) {
+            // Navega a la URL base de la sección
+            navigate(`${baseURL}#${sectionID}`, { replace: true });
+        } else {
+            // Si ya estamos en la página base, solo desplazamos a la sección
+            navigate(`#${sectionID}`);
+        }
+    };
+
+    // Hook para desplazar automáticamente después de cargar la página
+    useEffect(() => {
+        // Verifica si hay un fragmento en la URL (por ejemplo, "#sectionId")
+        if (location.hash) {
+            // Usamos scrollIntoView para desplazarnos a la sección
+            const section = document.querySelector(location.hash);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location]); // Vuelve a ejecutarse cuando la URL cambia (incluyendo el hash)
+
     return (
         <footer className='footer section'>
             <div className='footer__container footer-container section-container'>
                 <div className='footer__container__top footer-top'>
-
                     <div className='footer__container__top__banner footer-banner'>
                         <a className='footer__container__top__banner__link footer-banner-link' href="">
                             <img className='footer__container__top__banner__link__logo footer-banner-logo'
@@ -109,22 +141,25 @@ export const Footer = () => {
                     </div>
                     <div className='footer__container__top__grid footer-grid'>
                         {
-                            sections.map((section, index) =>
+                            sections.map((section, index) => (
                                 <div className='footer__container__top__grid__section footer-section' key={index}>
                                     <h4 className='footer__container__top__grid__section__title footer-section-title'>
                                         {section.title}
                                     </h4>
                                     <ul className='footer__container__top__grid__section__content footer-section-content'>
-                                        {section.content.map((item, index) =>
+                                        {section.content.map((item, index) => (
                                             <li className='footer__container__top__grid__section__content__item footer-section-item' key={index}>
-                                                <a className='footer__container__top__grid__section__content__item__link footer-section-link' href={`#${item.id}`}>
+                                                <button
+                                                    className='footer__container__top__grid__section__content__item__link footer-section-link'
+                                                    onClick={() => handleRedirect(section.baseURL, item.id)} // Llama a la función de redirección
+                                                >
                                                     {item.name}
-                                                </a>
+                                                </button>
                                             </li>
-                                        )}
+                                        ))}
                                     </ul>
                                 </div>
-                            )
+                            ))
                         }
                     </div>
                     <div className='footer__container__top__offices footer-offices'>
