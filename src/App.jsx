@@ -14,6 +14,7 @@ import { Header } from './components/site/Header'
 import { Footer } from './components/site/Footer'
 import { LandingPage } from './components/pages/home/LandingPage'
 import { Services } from './components/pages/services/Services'
+import { Group } from './components/pages/group/Group'
 
 export const App = () => {
     return (
@@ -22,6 +23,7 @@ export const App = () => {
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/servicios" element={<Services/>} />
+                <Route path="/equipo" element={<Group/>} />
             </Routes>
             <Footer />
         </Router>

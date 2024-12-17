@@ -49,12 +49,6 @@ const team = [
                 'linkedin': 'https://www.linkedin.com/in/nazareno-peralta/'
             },
             {
-                'name': 'Elian Denon',
-                'role': 'SysAdmin - DBA',
-                'icon': getIcons('team', 'executive', 'sys-admin-dba'),
-                'linkedin': 'https://www.linkedin.com/in/elian-denon/'
-            },
-            {
                 'name': 'Lucas Infantino',
                 'role': 'Ingeniero Cloud',
                 'icon': getIcons('team', 'executive', 'cloud-engineer'),
