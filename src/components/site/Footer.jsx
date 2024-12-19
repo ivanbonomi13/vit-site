@@ -99,32 +99,32 @@ const socialItems = [
 
 
 export const Footer = () => {
-    const location = useLocation(); // Obtiene la URL actual
-    const navigate = useNavigate(); // Función para redirigir
+    const location = useLocation();
+    const navigate = useNavigate(); 
 
-    // Esta función se encarga de manejar la redirección y desplazamiento a la sección
+    
     const handleRedirect = (baseURL, sectionID) => {
-        // Si estamos en una página diferente
+        
         if (location.pathname !== baseURL) {
-            // Navega a la URL base de la sección
+            
             navigate(`${baseURL}#${sectionID}`, { replace: true });
         } else {
-            // Si ya estamos en la página base, solo desplazamos a la sección
+            
             navigate(`#${sectionID}`);
         }
     };
 
-    // Hook para desplazar automáticamente después de cargar la página
+    
     useEffect(() => {
-        // Verifica si hay un fragmento en la URL (por ejemplo, "#sectionId")
+        
         if (location.hash) {
-            // Usamos scrollIntoView para desplazarnos a la sección
+            
             const section = document.querySelector(location.hash);
             if (section) {
                 section.scrollIntoView({ behavior: 'smooth' });
             }
         }
-    }, [location]); // Vuelve a ejecutarse cuando la URL cambia (incluyendo el hash)
+    }, [location]); 
 
     return (
         <footer className='footer section'>
@@ -151,7 +151,7 @@ export const Footer = () => {
                                             <li className='footer__container__top__grid__section__content__item footer-section-item' key={index}>
                                                 <button
                                                     className='footer__container__top__grid__section__content__item__link footer-section-link'
-                                                    onClick={() => handleRedirect(section.baseURL, item.id)} // Llama a la función de redirección
+                                                    onClick={() => handleRedirect(section.baseURL, item.id)} 
                                                 >
                                                     {item.name}
                                                 </button>
