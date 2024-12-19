@@ -54,7 +54,7 @@ export const ServicesHero = () => {
             </div>
 
             <h2 className={`services__additional-sections__title ${isLoaded ? "underline" : ""}`}>
-                Nuestros <span className="services__highlight">Servicios</span>
+                Nuestros Servicios
             </h2>
 
             <div className="services__additional-sections">
